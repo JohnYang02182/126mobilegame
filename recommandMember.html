@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>推荐会员</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/recommandMember.css">
+</head>
+<body>
+	<header></header>
+
+	<div class="model box-model" id="recommandMember">
+		<div class="title">推荐会员<span>|</span><span>分享你的欢乐与刺激</span></div>		
+		<div class="content">
+			<div>
+				<p>推荐代码：<span>3345678</span></p>
+				<div>
+					<span class="getCode" data-clipboard-text="3345678">点击复制</span>
+				</div>
+			</div>	
+			<div>
+				<p>推荐链接：<span>http://www.126bet6.com/r...</span></p>
+				<div>
+					<span class="getAnchor" data-clipboard-text="http://www.126bet6.com/recommand">点击复制</span>
+				</div>
+			</div>			
+		</div>
+		<div class="title sub-title">
+			我推荐的会员
+			<a href="#">查看奖励规则</a>
+		</div>
+		<div class="sub-content">
+			<p class="comment">您暂时还没有推荐的会员，赶紧复制上面的推荐链接发送给朋友吧。</p>
+
+			<div class="blocks">
+				<p class="date"><span class="bg">12</span>月<span class="bg">19</span>日 2016年</p>
+				<table>
+					<tr>
+						<th>用户名</th>
+						<th>存款总额</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>testA</td>
+						<td>0.00</td>
+						<td><a href="javascript:;">申请奖励</a></td>
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date"><span class="bg">12</span>月<span class="bg">19</span>日 2016年</p>
+				<table>
+					<tr>
+						<th>用户名</th>
+						<th>存款总额</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>testA</td>
+						<td>0.00</td>
+						<td><a href="javascript:;">申请奖励</a></td>
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date"><span class="bg">12</span>月<span class="bg">19</span>日 2016年</p>
+				<table>
+					<tr>
+						<th>用户名</th>
+						<th>存款总额</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>testA</td>
+						<td>0.00</td>
+						<td><a href="javascript:;">申请奖励</a></td>
+					</tr>					
+				</table>
+			</div>
+
+			<div class="page">共1页</div>
+			<div class="pagination clearfix">
+				<ul>
+					<li><a href="javascript:void(0);">首页</a></li>
+					<li><a href="javascript:void(0);">上一页</a></li>
+					<li><a href="javascript:void(0);">下一页</a></li>
+					<li><a href="javascript:void(0);">末页</a></li>
+					<li><span class="total-page">共<span>26</span>页</span></li>
+				</ul>
+				<div>					
+					<form id="paginationForm">
+						<input class="num" type="number" name="page" value="5" max="99">
+						<div class="go">GO</div>
+					</form>
+				</div>
+			</div>
+		</div>		
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\clipboard\clipboard.min.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			popLayer.init();
+			sucBox.init();
+
+			$('.getCode,.getAnchor').on("click",function(){
+				copy();
+			});
+			function copy() {
+	            var cb = new Clipboard('.getCode,.getAnchor', {
+	                target: function(trigger) {
+				        return ;
+				    },
+	                text: function(trigger) {
+				        return $(trigger).data('clipboard-text');
+				    }
+	            });
+	            cb.on('success', function(e) {
+	                sucBox.showBox("太棒了！推荐链接复制成功。您现可以在QQ、微信... 上黏帖发送给朋友了。","L");
+	            });
+	        }
+			
+
+			$(".blocks a").on('click',function(){
+				popLayer.showLayer("申請奖励失败","抱歉，申请奖励要求推荐会员最低存款总额为1000.00，请让会员多多充值稍后再申请哦。","",false);	
+			});
+
+			var l = $('.blocks').length;
+			if(l == 0){
+				$('.comment').show();
+				$('.page').hide();
+				$('.pagination').hide();
+			}else if(l <= 10){
+				$('.comment').hide();
+				$('.page').show();
+				$('.pagination').hide();
+			}else if(l > 10){
+				$('.comment').hide();
+				$('.page').hide();
+				$('.pagination').show();
+			}
+			// for test
+			var mode = 0;
+			var blocks = `<div class="blocks">
+					<p class="date"><span class="bg">12</span>月<span class="bg">19</span>日 2016年</p>
+					<table>
+						<tr>
+							<th>用户名</th>
+							<th>存款总额</th>
+							<th>操作</th>
+						</tr>
+						<tr>
+							<td>testA</td>
+							<td>0.00</td>
+							<td><a href="javascript:;">申请奖励</a></td>
+						</tr>					
+					</table>
+				</div>`;
+			$('.title').on("click" , function(){
+				if(mode == 0){
+					$('.blocks').remove();					
+					console.log("無內容...");			
+				}else if(mode == 1){
+					$('.blocks').remove();
+					for(var i=0; i<3; i++){
+						$('.comment').after(blocks);
+					}	
+					console.log("少於20個內容...");			
+				}else if(mode == 2){
+					$('.blocks').remove();
+					for(var i=0; i<11; i++){
+						$('.comment').after(blocks);
+					}	
+					console.log("大於20個內容(模擬效果)...");			
+				}
+
+				var l = $('.blocks').length;
+				if(l == 0){
+					$('.comment').show();
+					$('.page').hide();
+					$('.pagination').hide();
+				}else if(l <= 10){
+					$('.comment').hide();
+					$('.page').show();
+					$('.pagination').hide();
+				}else if(l > 10){
+					$('.comment').hide();
+					$('.page').hide();
+					$('.pagination').show();
+				}
+
+				mode++;
+				mode = mode%3;
+			})
+					
+		});
+	</script>
+</body>
+</html>
+
+
+
+

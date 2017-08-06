@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>交易纪录</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/transactionRecord.css">
+</head>
+<body>
+	<header></header>
+	
+	<div class="model page-model" id="transactionRecord">
+		<div class="title">交易纪录</div>
+		<div class="filters">
+			<ul class="dateFilter clearfix">
+				<li>今天</li>
+				<li>昨天</li>
+				<li>一周内</li>
+				<li>二周内</li>
+				<li class="active">一月内</li>
+			</ul>
+			<div class="sub-filter">
+				<ul class="operationFilter clearfix">
+					<li class="active">所有</li>
+					<li>充值</li>
+					<li>转帐</li>
+					<li>提款</li>
+					<li>红利</li>
+				</ul>
+				<ul class="statusFilter clearfix">
+					<li class="active">所有</li>
+					<li>待处理</li>
+					<li>处理中</li>
+					<li>成功</li>
+					<li>失败</li>
+				</ul>
+			</div>
+			<div class="fn-btn">
+				<span class="icon"></span>
+				<span>如何加入</span>
+			</div>
+		</div>	
+			
+		<div class="content">			
+			<div class="blocks">
+				<p class="date">
+					<span class="bg">12</span>月<span class="bg">19</span>日
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>金额</th>
+						<th>状态</th>
+					</tr>
+					<tr>
+						<td>充值</td>
+						<td>1688.00</td>
+						<td>成功</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span class="bg">12</span>月<span class="bg">19</span>日
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>金额</th>
+						<th>状态</th>
+					</tr>
+					<tr>
+						<td>红利</td>
+						<td>168.00</td>
+						<td>成功</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span class="bg">12</span>月<span class="bg">19</span>日
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>金额</th>
+						<th>状态</th>
+					</tr>
+					<tr>
+						<td>提款</td>
+						<td>888.00</td>
+						<td>失败</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span class="bg">12</span>月<span class="bg">19</span>日
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>金额</th>
+						<th>状态</th>
+					</tr>
+					<tr>
+						<td>转帐</td>
+						<td>300.00</td>
+						<td>成功</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span class="bg">12</span>月<span class="bg">19</span>日
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>金额</th>
+						<th>状态</th>
+					</tr>
+					<tr>
+						<td>充值</td>
+						<td>888.00</td>
+						<td>成功</td>						
+					</tr>					
+				</table>
+			</div>
+
+			<div class="pagination clearfix">
+				<ul>
+					<li><a href="javascript:void(0);">首页</a></li>
+					<li><a href="javascript:void(0);">上一页</a></li>
+					<li><a href="javascript:void(0);">下一页</a></li>
+					<li><a href="javascript:void(0);">末页</a></li>
+					<li><span class="total-page">共<span>26</span>页</span></li>
+				</ul>
+				<div>					
+					<form id="paginationForm">
+						<input class="num" type="number" name="page" value="5" max="99">
+						<div class="go">GO</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="no-data">
+			<img src="imgs/icons/Exclamation_228x228@3x.png" alt="无游戏纪录">
+			<p>您此时间段内，无任何交易纪录</p>
+		</div>	
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\clipboard\clipboard.min.js"></script>
+	<script src="js\header.js"></script>
+	<script src="js\tabBar.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			$(".filters li").on("click" , function(){
+				$(this).parent().children('li').removeClass("active");
+				$(this).addClass("active");
+			})
+
+			var onOff = true; 
+			$('.fn-btn').on("click" , function(){
+				var $this = $(this);
+				if(onOff)
+					$('.filters ul').css("border-color","");
+				else				
+					$('.filters ul').css("border-color"," rgba(206, 206, 210, 0.5)");
+				onOff = !onOff;	
+
+
+				$(".sub-filter").slideToggle(500,function(){
+					var isShow = $(this).css("display");
+					if(isShow == "none"){
+						
+						$this.find('.icon').removeClass('active');
+						$this.find('span').last().text('更多选项');
+					}else{
+						
+						$this.find('.icon').addClass('active');
+						$this.find('span').last().text('隐藏选项');
+					}
+					
+				});
+			})
+
+			// for test
+			var onOff = false;
+			$('#transactionRecord .title').on("click" , function(){
+				if(onOff){				
+					$("#transactionRecord .content").show();
+					$("#transactionRecord .no-data").hide();
+				}else{				
+					$("#transactionRecord .content").hide();
+					$("#transactionRecord .no-data").show();
+				}
+				onOff = !onOff;
+			})
+		});
+	</script>
+</body>
+</html>
+
+
+
+

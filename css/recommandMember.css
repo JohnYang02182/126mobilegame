@@ -1,0 +1,95 @@
+#recommandMember {
+  position: static;
+  display: block;
+  margin-bottom: 9.5rem;
+}
+#recommandMember .content > div {
+  font-size: 0.65rem;
+  color: #8c8c8c;
+  height: 2rem;
+  position: relative;
+  line-height: 2rem;
+}
+#recommandMember .content > div p {
+  width: 11.75rem;
+  float: left;
+}
+#recommandMember .content > div div {
+  float: left;
+  margin-left: 0;
+}
+#recommandMember .content > div div span {
+  color: #238eb5;
+}
+#recommandMember .content > div:first-of-type {
+  border-bottom: 0.05rem solid rgba(206, 206, 210, 0.5);
+}
+#recommandMember .sub-title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #8c8c8c;
+  border-top: 1px solid #d2d2d2;
+  position: relative;
+}
+#recommandMember .sub-title a {
+  font-size: 0.65rem;
+  font-weight: normal;
+  color: #238eb5;
+  position: absolute;
+  right: 0.8rem;
+}
+#recommandMember .sub-content {
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #8c8c8c;
+}
+#recommandMember .sub-content .blocks {
+  border-bottom: 1px solid #d2d2d2;
+}
+#recommandMember .sub-content .comment {
+  line-height: 1rem;
+  padding: 0.8rem 0.8rem 0;
+  display: none;
+}
+#recommandMember .sub-content .date {
+  font-weight: bold;
+  color: #238eb5;
+  padding: 0.6rem 0.8rem 0.4rem;
+}
+#recommandMember .sub-content .date .bg {
+  font-size: 0.8rem;
+}
+#recommandMember .sub-content table {
+  padding: 0 0.8rem 0.6rem;
+  border-spacing: 0;
+}
+#recommandMember .sub-content table th,
+#recommandMember .sub-content table td {
+  width: 4.8rem;
+  text-align: left;
+  font-weight: normal;
+}
+#recommandMember .sub-content table td a {
+  display: block;
+  color: #238eb5;
+}
+#recommandMember .sub-content table th:nth-of-type(2),
+#recommandMember .sub-content table td:nth-of-type(2) {
+  width: 5.55rem;
+}
+#recommandMember .sub-content table th:nth-of-type(3),
+#recommandMember .sub-content table td:nth-of-type(3) {
+  width: 4.05rem;
+}
+#recommandMember .sub-content .page {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  text-align: center;
+  display: none;
+}
+#recommandMember .sub-content .pagination {
+  margin-top: 1rem;
+  font-weight: normal;
+  display: none;
+}

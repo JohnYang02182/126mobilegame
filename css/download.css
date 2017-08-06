@@ -1,0 +1,92 @@
+#download {
+  width: 100%;
+  background-color: #fafafa;
+}
+#download .content {
+  height: 10.05rem;
+  padding: 0 0.8rem 0.85rem;
+  border-bottom: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  margin-bottom: 0.45rem;
+  background-color: #fff;
+}
+#download .content .brand {
+  text-align: center;
+  height: 1.75rem;
+}
+#download .content .brand img {
+  max-width: 100%;
+  height: 1.75rem;
+}
+#download .content dl {
+  float: left;
+  width: 7.2rem;
+  height: 8.3rem;
+  text-align: center;
+  font-size: 0.6rem;
+}
+#download .content dl dt img {
+  background-color: #ddd;
+  width: 7.2rem;
+  height: 5.75rem;
+}
+#download .content dl dd .name {
+  color: #73757b;
+  font-weight: bold;
+  padding: 0.3rem 0 0.25rem;
+  line-height: 0.6rem;
+}
+#download .content dl dd .d-btn {
+  border: 1px solid #04acd6;
+  width: 3.2rem;
+  height: 1.3rem;
+  border-radius: 1.4rem;
+  margin: 0 auto;
+}
+#download .content dl dd .d-btn .android {
+  background: url('../imgs/icons/Download_android_focus72x72@3x.jpg') no-repeat center;
+}
+#download .content dl dd .d-btn .android.disabled {
+  background: url('../imgs/icons/Download_android_enable72x72@3x.jpg') no-repeat center;
+}
+#download .content dl dd .d-btn .apple {
+  background: url('../imgs/icons/Download_ios_focus72x72@3x.jpg') no-repeat center;
+}
+#download .content dl dd .d-btn .apple.disabled {
+  background: url('../imgs/icons/Download_ios_enable72x72@3x.jpg') no-repeat center;
+}
+#download .content dl dd .d-btn .icon {
+  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  height: 0.9rem;
+  width: 0.9rem;
+  float: left;
+  background-size: 0.9rem 0.9rem !important;
+  background-clip: content-box !important;
+  background-origin: content-box !important;
+}
+#download .content dl dd .d-btn p {
+  line-height: 1.3rem;
+  color: #04acd6;
+  float: left;
+}
+#download .content dl dd .d-btn.disabled {
+  border-color: #cecece;
+}
+#download .content dl dd .d-btn.disabled p {
+  color: #cecece;
+}
+#download .content dl dd a {
+  display: block;
+  width: 3.2rem;
+  margin: 0 auto;
+}
+#download .content:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#download .no-borderTop {
+  border-top: none;
+}
+footer {
+  margin-top: 0;
+}

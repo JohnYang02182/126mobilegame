@@ -1,0 +1,108 @@
+#member {
+  background-color: #fafafa;
+  font-size: 0.65rem;
+  color: #8c8c8c;
+}
+#member .block {
+  margin-top: 0.8rem;
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+  background-color: #fff;
+}
+#member .block .detail {
+  padding: 0 1rem 0 0.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #111;
+}
+#member .block .detail-m16 {
+  padding: 0 0 0 0.8rem;
+}
+#member .block .unset {
+  padding-left: 0.8rem;
+}
+#member .block a {
+  display: block;
+  color: #8c8c8c;
+}
+#member .block > div:not(.management) {
+  margin-left: 0.8rem;
+  /*padding-right: 16/@r;*/
+  height: 2rem;
+  line-height: 2rem;
+}
+#member .block > div + div {
+  border-top: 0.05rem solid #d2d2d2;
+}
+#member .management ul {
+  border: none;
+}
+#member div.btn {
+  float: right;
+  margin-right: 0.8rem;
+}
+#member div.btn .setting {
+  display: block;
+  min-width: 2rem;
+  height: 2rem;
+  color: #238eb5;
+  float: left;
+  text-align: right;
+}
+#member div.btn .right-arrow {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  background: url('../imgs/icons/List_arrow_120x120@3x.png') no-repeat center;
+  background-size: 2rem 2rem;
+}
+#member div.btn .setting + .right-arrow {
+  margin-right: -0.8rem;
+}
+#member div.btn.arrow {
+  margin-right: 0;
+}
+#member .title {
+  width: 100%;
+  height: 5.5rem;
+  background: url('../imgs/background/Password_bg_960x330@3x.jpg') no-repeat center;
+  background-size: 16rem 5.5rem;
+}
+#member .title .icon {
+  float: left;
+  padding: 1.4rem 0.6rem 1.4rem 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: url('../imgs/icons/RegisteredMember_220x220@3x.png') no-repeat center;
+  background-size: 2.75rem 2.75rem;
+  background-origin: content-box;
+}
+#member .title .welecome {
+  float: left;
+  font-size: 0.9rem;
+  color: #fff;
+  /*line-height: 110/@r;	*/
+  width: 11.15rem;
+  height: 5.5rem;
+  text-align: center;
+  display: inline-block;
+}
+#member .title .welecome p:first-child {
+  line-height: 1rem;
+  height: 1rem;
+  padding: 1.75rem 0 0.15rem;
+}
+#member .title .text-1 {
+  font-size: 0.7rem;
+  color: #fff;
+}
+#member .logout .last-time {
+  font-size: 0.6rem;
+  color: #73757b;
+  padding: 0.9rem 0 0.8rem;
+  text-align: center;
+}
+#member .logout .logout-btn {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}

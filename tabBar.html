@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>Document</title>
+	<script src="js/common.js"></script>		
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/tabBar.css">	
+	<link rel="stylesheet" href="css/footer.css">	
+	
+</head>
+<body>
+	<div class="loginStatus" style="position: fixed;top:50px;right:5px;background-color: #DF013A;border-radius: 50%;font-size: 16px;height: 32px;line-height: 32px;width: 60px;text-align: center;">
+		未登录
+	</div>
+
+	<nav class="tab-bar">
+		<ul class="clearfix menu">
+			<!-- 未登录 -->
+			<li class="game" data-val="game">
+				<a href="javascript:void(0);"><span class="icon"></span><span class="categories">游戏</span></a>
+			</li>
+			<li class="regist" data-val="regist">
+				<a href="javascript:void(0);"><span class="icon"></span><span class="categories big">立即注册</span></a>			
+			</li>
+			<li class="login" data-val="login">
+				<a href="javascript:void(0);"><span class="icon"></span><span class="categories">登录</span></a>
+			</li>
+
+			<!-- 登录 -->
+			<li class="game hasLogin" data-val="game">
+				<a href="javascript:void(0);"><span class="icon"></span><span class="categories">游戏</span></a>
+			</li>
+			<li class="management hasLogin" data-val="management">
+				<a href="javascript:void(0);"><span class="icon"></span><span class="categories">资金管理</span></a>
+			</li>
+			<li class="member hasLogin" data-val="member">
+				<a href="javascript:void(0);"><span class="icon"></span><span class="categories">会员中心</span></a>
+			</li>
+		</ul>	
+		<div class="login-section model box-model" id="login">
+			<div class="title">登录<span>|</span><span>请先登录后使用会员功能</span><span class="close box-switch" data-val="login"></span></div>
+			
+			<div class="content">
+				<form class="loginTab" id="loginForm">
+					<div class="acc text-field">
+						<input type="text" name="account" placeholder="用户名">
+						<span class="close"></span>
+					</div>		
+					<div class="pwd text-field">
+						<input type="password" name="password" placeholder="密码">
+						<span class="close"></span>
+					</div>
+					<div class="errMsg">用户名或密码错误</div>
+					<div class="submit">
+						<input class="common-btn" type="submit" name="submit" id="submit" value="登录">
+					</div>
+					<div class="forget">
+						<input class="common-btn forget-btn" type="button" name="forget" id="forget" value="忘记密码?">
+					</div>				
+				</form>			
+			</div>
+		</div>	
+		<div class="game-section model box-model" id="game">
+			<div class="title">游戏<span>|</span><span>快速游戏</span><span class="close box-switch" data-val="game"></span></div>
+			
+			<div id="game-content">
+				<ul class="category-list clearfix">
+					<li>
+						<a href="slot.html">
+							<img src="imgs/tabBar/ToolsBar_slot_240x240@3x.jpg">
+						</a>
+						<span class="name">老虎机</span>
+					</li>
+					<li>
+						<a href="realmangame.html">
+							<img src="imgs/tabBar/ToolsBar_live_240x240@3x.jpg">
+						</a>
+						<span class="name">真人娱乐</span>
+					</li>
+					<li>
+						<a href="fishing.html">
+							<img src="imgs/tabBar/ToolsBar_fish_240x240@3x.jpg">
+						</a>
+						<span class="name">捕鱼王</span>
+					</li>
+				</ul>
+				<div class="favorite game-list">
+					<p>我收藏的游戏</p>
+					<ul class="clearfix">
+						<li><a href="javascript:;">疯狂的猴子</a></li>
+						<li><a href="javascript:;">快乐的猴子</a></li>
+						<li><a href="javascript:;">加班的猴子</a></li>
+					</ul>
+				</div>
+				<div class="regular game-list">
+					<p>我常玩的游戏</p>
+					<ul class="clearfix">
+						<li><a href="#">神经的猴子</a></li>
+						<li><a href="#">桑心的猴子</a></li>
+						<li><a href="#">无聊的猴子</a></li>
+					</ul>
+				</div>
+						
+			</div>
+		</div>	
+		<div class="management-section model box-model" id="management">
+			<div class="title">资金管理<span>|</span><span>快速充值转帐提款</span><span class="close box-switch" data-val="management"></span></div>
+			
+			<div id="management-content" >
+				<ul class="operating-list clearfix">
+					<li>
+						<a href="savemoney.html">
+							<div class="deposit"></div>
+							<p>存款</p>
+						</a>
+					</li>					
+					<li>
+						<a href="transfermoney.html">
+							<div class="transfer"></div>
+							<p>转帐</p>
+						</a>
+					</li>
+					<li>
+						<a href="takemoney_havecreditcard.html">
+							<div class="withdraw"></div>
+							<p>提款</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="report-list clearfix">
+					<li><a href="gameRecord.html">游戏纪录</a></li>
+					<li><a href="transactionRecord.html">交易纪录</a></li>
+					<li><a href="financialStatement.html">资金报表</a></li>
+				</ul>				
+			</div>
+		</div>
+	</nav>
+	<div class="wrapper"></div>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\tabBar.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">	
+	$(document).ready(function() {
+		
+		
+	});
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,10 @@
+#changePwd {
+  position: static;
+  display: block;
+  margin-bottom: 10.35rem;
+}
+#changePwd .submit {
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-left: 0;
+}

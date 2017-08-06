@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>存款完畢</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/savemoneyfin.css">
+</head>
+<body>
+	<header></header>
+	<div class="container model">
+		<div class="sucarea">
+			<div class="havepass">
+				<p>您已申请通过</p>
+				<img src="imgs/logo/Wechat_237x207@3x.png" class="wesin">
+				<div class="clearfix"></div>
+			</div>
+			<div class="savebox">
+				<p class="savetext">存款</p>
+				<div class="savenum">123456788.00</div>
+			</div>
+			<div class="clearfix"></div>
+			<p class="tip">已提交成功，请使用以下信息付款</p>
+		</div>
+		<div class="recievetext">
+			<p>收款人信息</p>
+		</div>
+		<div class="payinfoarea">
+			<p class="infotitle">支付宝帐号：</p>
+			<p class="info">15682318703</p>
+			<div class="clearfix"></div>
+			<p class="infotitle">用户名：</p>
+			<p class="info">王爱国</p>
+			<div class="clearfix"></div>
+			<p class="infotitle">付款备注：</p>
+			<p class="info">264987</p>
+			<div class="clearfix"></div>
+			<p class="littletip">为了您的存款能快速入帐，支付时请务必填写付款备注。</p>
+			<img src="imgs/QR_code_270x270@3x.png" class="qrimg">
+			<input type="submit" name="submit" class="common-btn" value="启动支付宝支付">
+		</div>
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">
+	
+			
+		    $(function(){
+		    	popLayer.init();
+		        popLayer.showLayer("订单已提交","正在等待银行返回支付结果，请尽快充值","1","3",function(){
+		            console.log("OK");
+		            popLayer.hideLayer(); 
+
+		            setTimeout(function(){
+					        popLayer.showLayer("订单已失效","非常抱歉，由于长时间没有检测到您的存款，本存款订单已失效，请再次尝试存款或","0","1",function(){
+					            console.log("OK");
+					            popLayer.hideLayer(); 
+					        });
+					        //因彈跳視窗設計內容只能為字串，故加入超連結需另外Append元素。
+					        $('.details').append("<a class='contactService' href=''>聯繫客服。</a>")
+					},1500);
+		        });
+		    });
+</script>
+</html>

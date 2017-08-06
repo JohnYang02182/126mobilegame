@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>修改密码</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/changePwd.css">
+</head>
+<body>
+	<header></header>
+
+	<div class="model box-model" id="changePwd">
+		<div class="title">修改密码</div>		
+		<div class="content">
+			<form class="change-pwd" id="change-pwd">
+				<div class="text-field">
+					<input type="password" name="opwd" id="opwd" placeholder="旧密码">
+					<span class="close"></span>
+				</div>		
+				<div class="text-field">
+					<input type="password" name="npwd" id="npwd" placeholder="新密码">
+					<span class="close"></span>
+				</div>
+				<div class="text-field">
+					<input type="password" name="npwd2" id="npwd2" placeholder="新密码">
+					<span class="close"></span>
+				</div>		
+
+				<div class="submit">
+					<input class="common-btn" type="submit" value="确定">
+				</div>
+								
+			</form>			
+		</div>
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			popLayer.init();
+			sucBox.init();
+			//开启栏位验证
+	    	$("#change-pwd").validate({
+	    		rules: {
+		    		opwd:{	    			
+		    			minlength : 6,
+		    			maxlength : 12,
+		    			pwd : true,
+		    			numAndAlphabet: true
+		    		},
+		    		npwd:{
+		    			minlength : 6,
+		    			maxlength : 12,
+		    			pwd : true,
+		    			numAndAlphabet: true
+		    		},
+		    		npwd2:{
+		    			minlength : 6,
+		    			maxlength : 12,
+		    			pwd : true,
+		    			numAndAlphabet: true,
+		    			equalTo: "#npwd"
+		    		}
+		    	},
+			    submitHandler: function() {	 	
+			    	popLayer.showLayer("修改密码失败","抱歉，修改密码失败。请再重新试一次。","",false,function(){	            
+			    	    popLayer.hideLayer(); 
+			    	    sucBox.showBox("修改密码成功");
+			    	});				
+			    }
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+

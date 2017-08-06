@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>登录</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">	
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<header></header>
+
+	<div class="model box-model" id="loginPage">
+		<div class="title">登录<span>|</span><span>请先登录后使用会员功能</span></div>		
+		<div class="content">
+			<form class="loginPage" id="loginForm">
+				<div class="acc text-field">
+					<input type="text" name="account" id="account" placeholder="用户名">
+					<span class="close"></span>
+				</div>		
+				<div class="pwd text-field">
+					<input type="password" name="password" id="password" placeholder="密码">
+					<span class="close"></span>
+				</div>
+				<div class="validate text-field">
+					<input type="text" name="valid" id="valid" placeholder="验证码">
+					<span class="close"></span>
+				</div>
+				<div class="valid-img">
+					<img src="imgs/Number_600x150@3x.jpg" alt="validcode">
+				</div>
+				<div class="errMsg">帐号或密码不符</div>
+				<div class="submit"><input class="common-btn" type="submit" name="submit" value="登录"></div>
+				<div class="forget"><input class="common-btn" type="button" name="forget" value="忘记密码?"></div>				
+			</form>			
+		</div>
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {	
+			//开启栏位验证
+		    $(".loginPage").validate({
+		    	rules: {
+		    		account:{
+		    			minlength : 4,
+		    			maxlength : 10,
+		    			userName : true,
+		    			numAndAlphabet: true
+		    		},
+		    		password:{
+		    			minlength : 6,
+		    			maxlength : 12,
+		    			pwd : true,
+		    			numAndAlphabet: true
+		    		},	
+		    		valid:{
+		    			required: true,
+		    			numAndAlphabet: true
+		    		}
+		    	},	    	
+			    submitHandler: function() {			    	
+			    	$(this).submit();
+			    	console.log("登入.... ");
+			    }		    
+			    // ,debug:true
+			});	
+		});
+	</script>
+</body>
+</html>
+
+
+
+

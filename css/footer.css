@@ -1,0 +1,152 @@
+footer {
+  width: 100%;
+  height: 1.85rem;
+  border-top: 0.05rem solid #d2d2d2;
+  background-color: #f9f9f9;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  margin-top: 0.8rem;
+}
+footer .justtext {
+  background-color: #f9f9f9;
+  width: 65%;
+  float: left;
+  line-height: 1rem;
+  text-align: center;
+  border-right: 0.05rem solid #bebebe;
+}
+footer .justtext p {
+  font-size: 0.55rem;
+  -webkit-transform: scale(0.91);
+}
+footer .computerdownload {
+  background-color: #f9f9f9;
+  line-height: 0.9rem;
+  width: 34%;
+  float: left;
+  vertical-align: center;
+}
+footer .computerdownload .wordcpu {
+  width: 40%;
+  float: left;
+  margin-top: 0.05rem;
+}
+footer .computerdownload .wordcpu p {
+  font-size: 0.55rem;
+  -webkit-transform: scale(0.91);
+}
+footer .computerdownload .imgcpu {
+  position: relative;
+  width: 40%;
+  float: left;
+  margin-top: 0.05rem;
+  margin-left: 0.25rem;
+  text-align: center;
+}
+footer .computerdownload .imgcpu img {
+  position: relative;
+  transform: translateY(0%);
+  top: 50%;
+  height: 0.9rem;
+}
+footer.fixed {
+  position: relative;
+  bottom: -1.5rem;
+}
+nav.tab-bar {
+  width: 100%;
+  height: 2.45rem;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  border-top: 0.05rem solid #d2d2d2;
+  font-size: 0.6rem;
+  /*font-weight: bold;*/
+  color: #364056;
+  /*for test*/
+}
+nav.tab-bar .menu li {
+  float: left;
+  width: 33.333%;
+  height: 2.45rem;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #eee;
+  position: relative;
+  z-index: 99;
+}
+nav.tab-bar .menu li a {
+  height: 2.45rem;
+  display: block;
+  text-align: center;
+  color: #263238;
+  text-decoration: none;
+  position: relative;
+}
+nav.tab-bar .menu li a span.categories {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  line-height: 0.6rem;
+  display: block;
+  position: relative;
+  bottom: 0.05rem;
+}
+nav.tab-bar li.active a {
+  color: #09a4de;
+}
+nav.tab-bar span.icon {
+  display: block;
+  padding: 0.15rem 0 0.2rem;
+  margin: 0 auto;
+}
+nav.tab-bar .game .icon {
+  width: 1.25rem;
+  height: 1.15rem;
+  background: url('../imgs/icons/Game_enable_100x92@3x.png') no-repeat center;
+  background-size: 1.25rem !important;
+}
+nav.tab-bar .regist .icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  color: #263238;
+  margin-top: -1.15rem;
+  padding: 0 0 0.35rem;
+  background: url('../imgs/icons/Member_enable_184x184@3x.png') no-repeat center;
+  background-size: 2.3rem !important;
+}
+nav.tab-bar .management .icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  color: #263238;
+  margin-top: -1.15rem;
+  padding: 0 0 0.35rem;
+  background: url('../imgs/icons/Management_enable184x184@3x.png') no-repeat center;
+  background-size: 2.3rem !important;
+}
+nav.tab-bar .login .icon,
+nav.tab-bar .member .icon {
+  width: 1.3rem;
+  height: 1.15rem;
+  background: url('../imgs/icons/login_enable_104x92@3x.png') no-repeat center;
+  background-size: 1.3rem !important;
+}
+nav.tab-bar .game .icon.active {
+  background: url('../imgs/icons/Game_focus_100x92@3x.png') no-repeat center;
+}
+nav.tab-bar .regist .icon.active {
+  background: url('../imgs/icons/Member_focus184x184@3x.png') no-repeat center;
+}
+nav.tab-bar .management .icon.active {
+  background: url('../imgs/icons/Management_focus184x184@3x.png') no-repeat center;
+}
+nav.tab-bar .login .icon.active,
+nav.tab-bar .member .icon.active {
+  background: url('../imgs/icons/Login_focus_104x92@3x.png') no-repeat center;
+}
+nav.tab-bar .hasLogin {
+  display: none;
+}

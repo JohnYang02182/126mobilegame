@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>無绑定信用卡提款</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/member.css">		
+	<link rel="stylesheet" href="css/takemoneynocard.css">	
+</head>
+<body>
+	<header></header>
+	<div class="container model page-model">
+		<form id="takemoneyinfo">
+		<div class="title">
+			提款
+		</div>
+		<div class="content">
+			<div class="takemoneysub">
+				<p>钱包余额：</p>
+				<div class="remainmoney">1234567</div>
+			</div>
+			<div class="line"></div>
+			<div class="inputmoneyarea">
+				<p class="takemoneytip">输入提款金额</p>
+				<div class="infoinputbox">
+					<input id="inputmon" type="number" name="money" class="infoinput" placeholder="输入提款金额">
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="subtitle">
+				选择收款方式
+			</div>
+			<div class="creditcardarea">
+				<div class="nobankcardinfo">
+					<img src="imgs/icons/Close_132x132@3x.png" class="banklogo">
+					<img src="imgs/icons/Cross_68x68@3x.png" class="closebutton">
+					<div class="cardtext">您未绑定有银行卡<br>请至少先绑定一张银行卡。</div>
+				</div>
+			</div>
+		<input type="submit" name="submit" class="common-btn nextstep" value="下一步">
+		</div>
+		</form>
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$("#takemoneyinfo").validate({   
+		    	 submitHandler: function(form) {			    	
+			    	$(this).submit();
+			    	//驗證無誤則導至成功頁面
+					location.href = "nocreditcardtied.html";
+			    	console.log("转到新增信用卡.... ");
+			    }		
+		});
+	});
+	
+</script>
+</html>

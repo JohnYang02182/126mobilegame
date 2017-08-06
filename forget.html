@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>帐号恢复</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/forget.css">	
+</head>
+<body>
+	<header></header>
+
+	<div class="forget-section model page-model" id="forget-main">
+		<div class="title">帐号恢复</div>
+		
+		<div class="content">
+			<p class="main-comment">登录时遇到问题了？我好像......</p>
+			<div class="forget-pwd">
+				<input type="radio" id="pwd" name="radio" value="pwd">
+				<label for="pwd" class="clearfix">
+					<div>
+						<span class="outter"></span>
+						<span class="inner"></span>
+						<span class="text">忘记密码了</span>
+					</div>
+				</label>
+			</div>	
+			<div class="forget-usr">
+				<input type="radio" id="usr" name="radio" value="usr">
+				<label for="usr" class="clearfix">
+					<div>
+						<span class="outter"></span>
+						<span class="inner"></span>
+						<span class="text">忘记用户名了</span>
+					</div>
+				</label>
+			</div>
+			<div class="continue"><input class="common-btn" type="button" value="继续"></div>
+			<p class="comment">如果您未绑定电子邮箱或手机号码，要找回用户名或密码请联系在线客服。</p>
+		</div>
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">	
+	$(document).ready(function() {
+		$('#pwd').attr('checked','checked');
+		$('.continue').on('touchstart',function(){
+			var checked = $('input[name="radio"]:checked').val();						
+			if(checked == "pwd"){
+				window.location.href = "forget_pwd.html";
+			}else{
+				window.location.href = "forget_usr.html";
+			}
+		})
+	});
+</script>
+</html>
+
+
+
+

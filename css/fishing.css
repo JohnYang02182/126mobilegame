@@ -1,0 +1,25 @@
+#fishing {
+  width: 100%;
+  height: 20.7rem;
+  background: url('../imgs/fishing/fishing.jpg') no-repeat center;
+  background-size: 16rem 20.69rem !important;
+  position: relative;
+}
+#fishing .start-btn {
+  width: 14.4rem;
+  height: 1.8rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  background-color: #364056;
+  text-align: center;
+  line-height: 1.8rem;
+  position: absolute;
+  left: 0.8rem;
+  bottom: 2.5rem;
+}
+#fishing .start-btn a {
+  color: #fff;
+}
+footer {
+  margin-top: 0;
+}

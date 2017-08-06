@@ -1,0 +1,157 @@
+p {
+  margin: 0;
+}
+table,
+th,
+td {
+  border: 0.05rem solid #d2d2d2;
+  border-collapse: collapse;
+}
+ol {
+  margin: 0;
+  padding: 0;
+}
+select {
+  border: none;
+}
+button {
+  border: none;
+  padding: 0;
+}
+input {
+  border: none;
+  padding: 0;
+}
+.slick-dots {
+  bottom: -1.4rem;
+}
+.slick-dots li button:before {
+  font-size: 1rem;
+}
+.slick-dots li.slick-active button:before {
+  color: #2395c4;
+  opacity: 1.0;
+}
+.slick-slider {
+  margin-bottom: 1.5rem;
+}
+.container {
+  width: 100%;
+  margin-bottom: -0.8rem;
+  overflow-x: hidden;
+}
+.container .content {
+  padding: 0;
+}
+.container .content .tiedbanksub {
+  width: 15.2rem;
+  padding-left: 0.8rem;
+  height: 2.1rem;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .content .tiedbanksub p {
+  font-size: 0.7rem;
+  color: #73757b;
+  line-height: 2.1rem;
+}
+.container .content .nocreditcardarea {
+  width: 14.4rem;
+  padding: 0.8rem;
+  height: 8.9rem;
+  background-color: #f9f9f9;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .content .nocreditcardarea .changecircle {
+  width: 100%;
+  height: 1.25rem;
+}
+.container .content .nocreditcardarea .tip {
+  font-color: #8c8c8c;
+  font-size: 0.6rem;
+}
+.container .content .creditcardarea {
+  width: 14.4rem;
+  padding: 0.8rem;
+  height: 8.9rem;
+  background-color: #f9f9f9;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .content .creditcardarea .creditcardbanner .bannerslider {
+  width: 100%;
+  display: block;
+}
+.container .content .creditcardarea .creditcardbanner .changecircle {
+  width: 100%;
+  height: 1.25rem;
+}
+.container .content .creditcardarea .creditcardbanner .changecircle .circle {
+  border-radius: 100%;
+  line-height: 1.25rem;
+  height: 0.4rem;
+  width: 0.4rem;
+  background-color: #71767a;
+  margin-left: 5.6rem;
+}
+.container .content .creditcardarea .creditcardbanner .changecircle .circle2 {
+  border-radius: 100%;
+  line-height: 1.25rem;
+  height: 0.4rem;
+  width: 0.4rem;
+  margin-left: 0.4rem;
+  background-color: #71767a;
+}
+.container .content .creditcardarea .creditcardbanner .changecircle .circle3 {
+  border-radius: 100%;
+  line-height: 1.25rem;
+  height: 0.4rem;
+  width: 0.4rem;
+  margin-left: 0.45rem;
+  background-color: #71767a;
+}
+.container .content .creditcardarea .tip {
+  color: #8c8c8c;
+  font-size: 0.6rem;
+}
+.container .content .creditcardinfo {
+  width: 15.2rem;
+  padding-left: 0.8rem;
+  background-color: #fafafa;
+}
+.container .content .creditcardinfo .infotitle {
+  color: #8c8c8c;
+  font-size: 0.65rem;
+  line-height: 2.3rem;
+}
+.container .content .creditcardinfo .infoinputbox input[type=text]:disabled {
+  border-radius: 0.15rem;
+  height: 1.5rem;
+  width: 13.9rem;
+  font-size: 0.65rem;
+  background-color: #c1c1c1;
+  color: #111111;
+  padding-left: 0.5rem;
+  line-height: 1.5rem;
+  opacity: 1;
+}
+.container .content .creditcardinfo .line {
+  width: 15.2rem;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+}
+.container .content .creditcardinfo .line2 {
+  width: 15.2rem;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+  margin-bottom: 0.8rem;
+}
+.container .content .creditcardinfo .clicktotied {
+  margin: 1.25rem 0;
+}
+.container .content .creditcardinfo .tiedtip {
+  margin-top: 0.675rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: bold;
+  color: #8c8c8c;
+  margin-bottom: 1.125rem;
+}

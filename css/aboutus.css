@@ -1,0 +1,149 @@
+button {
+  padding: 0;
+}
+table,
+th,
+td {
+  border: 1px solid #d2d2d2;
+  border-collapse: collapse;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  background-color: #fafafa;
+}
+.container .titlearea {
+  height: 2.2rem;
+  width: 100%;
+}
+.container .titlearea .title {
+  line-height: 2.2rem;
+  float: left;
+  position: relative;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #73757b;
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+}
+.container .titlearea .line {
+  margin: 0 0.5rem;
+  margin-top: 0.675rem;
+  float: left;
+  position: relative;
+  height: 0.85rem;
+  width: 0.05rem;
+  background-color: #73757b;
+}
+.container .driverline {
+  width: 100%;
+  height: 1px;
+  background-color: #c9c9c9;
+  margin-bottom: 0.8rem;
+}
+.container .scrollarea {
+  width: 100%;
+}
+.container .scrollarea .givescrolltop {
+  position: absolute;
+  top: 33.75rem;
+}
+.container .scrollarea .maincontain {
+  width: 14.4rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .scrollarea .maincontain .maintitlearea {
+  width: 100%;
+}
+.container .scrollarea .maincontain .maintitlearea .dot {
+  margin: 0.275rem 0.25rem 0.475rem 0.1rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: #73757b;
+  float: left;
+}
+.container .scrollarea .maincontain .maintitlearea .licencetitle {
+  float: left;
+  font-size: 0.75rem;
+  color: #73757b;
+}
+.container .scrollarea .maincontain .licencearticle {
+  width: 100%;
+  padding-bottom: 0.1rem;
+  padding-top: 0.475rem;
+}
+.container .scrollarea .maincontain .licencearticle .articlecontent {
+  text-align: justify;
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  color: #8c8c8c;
+  margin-bottom: 0.85rem;
+}
+.container .scrollarea .maincontain .licencearticle .articlecontent a {
+  color: #238eb5;
+  text-decoration: underline;
+}
+.container .scrollarea .line {
+  width: 100%;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+  margin: 0.8rem 0;
+}
+.container .scrollarea .righttitlearea {
+  padding-bottom: 0.8rem;
+}
+.container .scrollarea .righttitlearea .dot {
+  margin: 0.275rem 0.25rem 0.475rem 0.8rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: #73757b;
+  float: left;
+}
+.container .scrollarea .righttitlearea .righttitle {
+  float: left;
+  font-size: 0.75rem;
+  color: #73757b;
+}
+.container .scrollarea .contectus {
+  width: 14.4rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .scrollarea .contectus .row .cttitle {
+  width: 5.5rem;
+  height: 1.75rem;
+  background-color: #238eb5;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+.container .scrollarea .contectus .row .ctimf {
+  width: 8rem;
+  height: 1.75rem;
+  background-color: white;
+  color: #8c8c8c;
+  font-size: 0.7rem;
+  padding-left: 0.8rem;
+}
+.container .scrollarea .line2 {
+  width: 100%;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+  margin-top: 0.8rem;
+}

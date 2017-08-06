@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>transfermoney</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/transfermoney.css">
+</head>
+<body>
+	<header></header>
+	<div class="container model">
+		<div class="title">
+			<p>转帐</p>
+		</div>
+		<form id="transmoneyform">
+			<div class="chooseaccountout">
+				<p class="choosew">选择转出帐户</p>
+				<div class="infoselectbox">
+					<select id="out" name="out" class="infoselect">
+						<option>选择转出帐户</option>
+						<option>中心钱包</option>
+						<option>PT娱乐城</option>
+						<option>AG娱乐城</option>
+					</select>
+				</div>
+				<div class="remainmoney">
+					<p class="remainmoneyw">余额：</p>
+					<p id="remainnumber">------</p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="chooseaccountin">
+				<p class="intoaccount">选择转入帐户</p>
+				<div class="infoselectbox">
+					<select class="infoselect" name="in" class="in">
+						<option>选择转入帐户</option>
+						<option>中心钱包</option>
+						<option>PT娱乐城</option>
+						<option>AG娱乐城</option>
+					</select>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="choosemoney">
+				<p class="intomoney">选择转帐金额</p>
+				<div class="infoinputbox">
+					<input id="inputmon" class="infoinput" type="number" name="money" placeholder="输入转帐金额">
+				</div>
+				<div class="alertmoney">转出余额不足，请重新输入。</div>
+			</div>
+		</form>
+		<div class="line"></div>
+		<p class="servicew">优惠活动</p>
+		<div class="promotion1">
+			<input type="radio" id="game01" name="radio" value="game">
+			<label for="game01" class="clearfix">
+				<div>
+					<span class="outter"></span>
+					<span class="inner"></span>
+					<span class="text">MG老虎机100%红利-直接送</span>
+				</div>
+			</label>
+		</div>	
+		<div class="promotion2">
+			<input type="radio" id="game02" name="radio" value="game">
+			<label for="game02" class="clearfix">
+				<div>
+					<span class="outter"></span>
+					<span class="inner"></span>
+					<span class="text">MG老虎机笔笔存30%红利-直接送</span>
+				</div>
+			</label>
+		</div>
+		<div class="promotion3">
+			<input type="radio" id="game03" name="radio" value="game">
+			<label for="game03" class="clearfix">
+				<div>
+					<span class="outter"></span>
+					<span class="inner"></span>
+					<span class="text">MG老虎机每日首存50%红利-直接送</span>
+				</div>
+			</label>
+		</div>
+		<div class="promotion4">
+			<input type="radio" id="game04" name="radio" value="game">
+			<label for="game04" class="clearfix">
+				<div>
+					<span class="outter"></span>
+					<span class="inner"></span>
+					<span class="text">下次参与</span>
+				</div>
+			</label>
+		</div>
+		<p class="attention">注意：請勿使用返水、救援金、免費彩金等申請任何紅利，否則將扣除所得盈利和餘額！</p>
+		<input type="submit" name="submit" class="turnmoney common-btn show-layer" value="转帐">
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>	
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript"> 
+	var x = document.getElementById("out");
+	var y = document.getElementById("remainnumber");
+	var option = document.getElementsByTagName("option");
+	x.onchange= function(){
+		 if (x.value==="中心钱包") {
+		 	y.innerHTML="200";
+		 }
+		 else if (x.value==="PT娱乐城") {
+		 	y.innerHTML="300";
+		 }
+		 else if (x.value==="AG娱乐城") {
+		 	y.innerHTML="400";
+		 }
+	}
+	
+	$('.alertmoney').hide();
+	$('.turnmoney').on('click',function(){
+		var remainnum = document.getElementById("remainnumber").innerHTML;
+		var inputmon = document.getElementById("inputmon").value;
+		if(Number(remainnum)<Number(inputmon)){
+			$('.alertmoney').show();
+		}
+		else{
+			$('.alertmoney').hide();
+		}
+	});
+
+	$(document).ready(function() {
+		 $("#transmoneyform").validate({
+		 	rules: {
+		 		money:{
+		 			required:true,
+		 			maxlength:10
+		 		}
+		 	},
+		    submitHandler: function(form) {			    	
+		    	$(this).submit();
+		    	//驗證無誤則導至成功頁面
+				location.href = "transmoneysuc.html";
+		    	console.log("转帐成功.... ");
+		    }		    
+		});
+	});
+	$(function(){
+	    popLayer.init();
+	    $('.show-layer').on('click',function(){
+	        popLayer.showLayer("转帐失败","抱歉，转帐失败。请再重新再试一次。","0","3",function(){
+	            console.log("若成功轉至成功頁面");
+	            popLayer.hideLayer(); 
+	        });
+	    });
+	})
+</script>
+</html>

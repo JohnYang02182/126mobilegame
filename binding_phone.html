@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>绑定手机</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">		
+	<link rel="stylesheet" href="css/common.css">	
+	<link rel="stylesheet" href="css/share.css">		
+	<link rel="stylesheet" href="css/binding.css">	
+</head>
+<body>
+	<header></header>
+
+	<div id="phone" class="model page-model">
+		<div class="title">绑定手机</div>
+		<div class="content">	
+			<form class="binding-phone" id="binding-phone">
+				<div class="phone text-field">
+					<input type="number" name="phone" placeholder="手机号码">
+					<span class="close"></span>
+				</div>
+
+				<div class="validate text-field required">
+					<input type="text" name="valid" placeholder="验证码">
+					<span class="close"></span>
+				</div>
+				<div class="valid-img">
+					<img src="imgs/Number_600x150@3x.jpg" alt="validcode">
+				</div>
+				
+				<div class="save">
+					<input class="common-btn" type="submit" id="submit" value="保存">
+				</div>				
+			</form>	
+		</div>
+	</div>
+	
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			popLayer.init();
+			sucBox.init();
+			//开启栏位验证
+		    $("#binding-phone").validate({
+		    	rules: {
+		    		phone:{	    			
+		    			phoneCN: true,
+		    			required: true
+		    		},
+		    		valid:{	    			
+		    			numAndAlphabet: true,
+		    			required: true
+		    		}
+		    	},
+			    submitHandler: function() {	
+			    	popLayer.showLayer("绑定手机号码失败","抱歉，绑定手机号码失败。请再重新试一次。","",false,function(){	            
+			    	    popLayer.hideLayer(); 
+			    	    sucBox.showBox("绑定手机号码成功");
+			    	});
+			    }
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+

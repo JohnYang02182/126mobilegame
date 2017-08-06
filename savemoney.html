@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<title>存款頁面</title>
+		<script src="js/common.js"></script>	
+		<link rel="stylesheet" href="css/reset-m.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/share.css">
+		<link rel="stylesheet" href="css/savemoney.css">
+	</head>
+	<body>
+		<header></header>
+		<div class="container model">
+			<div class="title">
+				<p class="savemoneytext">存款</p>
+			</div>
+			<div class="choosetextarea">
+				<p class="choosetext">选择存款方式</p>
+			</div>
+			<div class="choosemethod">
+				<button class="method01">
+					<img src="imgs/icons/Payment_platform_237x207@3x.png" class="thethird">
+					<p>第三方</p>
+				</button>
+				<button class="method02">
+					<img src="imgs/logo/Wechat_237x207@3x.png" class="wesin">
+					<p>微信</p>
+				</button>
+				<button class="method03">
+					<img src="imgs/logo/Alipay_237x207@3x.png" class="paybaw">
+					<p>支付宝</p>
+				</button>
+				<button class="method04">
+					<img src="imgs/logo/Bank_Transfer_237x207@3x.png" class="transbank">
+					<p>银行转帐</p>
+				</button>
+			</div>
+			<form id="entermoney">
+			<div class="entersavemoney">
+				<p class="entertext">输入存款金额</p>
+				<div class="infoinputbox">
+					<input id="inputmon" type="number" name="money" placeholder="输入存款金额" class="	infoinput">
+				</div>
+			</div>
+			<div class="line"></div>
+				<input type="submit" name="submit" class="nextpage common-btn show-layer" value="下一步">
+			<div class="line"></div>
+			</form>
+		</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>	
+	</body>
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>	
+	<script src="js\share.js"></script>
+	<script type="text/javascript">
+			$("#entermoney").validate({
+				rules:{
+					money:{
+						required:true,
+						maxlength:10
+					}
+				},
+			     submitHandler: function(form) {			    	
+			    	$(this).submit();
+			    	//驗證無誤則導至成功頁面
+					location.href = "savemoneyfin.html";
+			    	console.log("储存成功.... ");
+			    }		 
+			});
+		$('.method01').on('click',function(){
+			$('.method01').css('background-color','#eeeeee');
+			$('.method02').css('background-color','');
+			$('.method03').css('background-color','');
+			$('.method04').css('background-color','');
+		});
+
+		$('.method02').on('click',function(){
+			$('.method02').css('background-color','#eeeeee');
+			$('.method01').css('background-color','');
+			$('.method03').css('background-color','');
+			$('.method04').css('background-color','');
+		});
+
+		$('.method03').on('click',function(){
+			$('.method03').css('background-color','#eeeeee');
+			$('.method02').css('background-color','');
+			$('.method01').css('background-color','');
+			$('.method04').css('background-color','');
+		});
+
+		$('.method04').on('click',function(){
+			$('.method04').css('background-color','#eeeeee');
+			$('.method02').css('background-color','');
+			$('.method03').css('background-color','');
+			$('.method01').css('background-color','');
+		});
+
+	</script>
+	</html>	

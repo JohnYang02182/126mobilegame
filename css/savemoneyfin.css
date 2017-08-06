@@ -1,0 +1,122 @@
+button {
+  padding: 0;
+  border: 0;
+}
+table,
+th,
+td {
+  border: 0.05rem solid #d2d2d2;
+  border-collapse: collapse;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  margin: 0;
+}
+input {
+  border: none;
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+.container .sucarea {
+  width: 100%;
+  text-align: center;
+  background-color: #fafafa;
+  padding-top: 0.5rem;
+}
+.container .sucarea .havepass {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.container .sucarea .havepass p {
+  font-size: 0.65rem;
+  color: #73757b;
+  float: left;
+  line-height: 3.9rem;
+  margin-left: 4.35rem;
+}
+.container .sucarea .havepass .wesin {
+  width: 4.5rem;
+  float: left;
+  color: black;
+}
+.container .sucarea .savebox .savetext {
+  font-size: 0.65rem;
+  color: #73757b;
+  float: left;
+  margin-left: 5rem;
+}
+.container .sucarea .savebox .savenum {
+  font-size: 0.65rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  float: left;
+}
+.container .sucarea .tip {
+  margin-top: 0.5rem;
+  font-size: 0.65rem;
+  color: #73757b;
+  padding-bottom: 1.15rem;
+}
+.container .recievetext {
+  width: 100%;
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .recievetext p {
+  font-size: 0.65rem;
+  color: #75767b;
+  line-height: 2.1rem;
+  margin-left: 0.8rem;
+}
+.container .payinfoarea {
+  width: 14.4rem;
+  padding: 0 0.8rem;
+  background-color: #fafafa;
+  padding-top: 0.8rem;
+}
+.container .payinfoarea .infotitle {
+  float: left;
+  font-size: 0.65rem;
+  color: #111111;
+  margin-bottom: 0.75rem;
+}
+.container .payinfoarea .info {
+  float: left;
+  font-size: 0.65rem;
+  color: #111111;
+  margin-bottom: 0.75rem;
+}
+.container .littletip {
+  width: 15.2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.5rem;
+  -webkit-transform: scale(0.83);
+  float: left;
+  color: #111111;
+}
+.container .qrimg {
+  width: 4.5rem;
+  margin-left: 4.95rem;
+  margin-bottom: 0.8rem;
+}
+.container .usepaypal {
+  height: 1.8rem;
+  width: 14.4rem;
+  background-color: #478d9e;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  color: white;
+}

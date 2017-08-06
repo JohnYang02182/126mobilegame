@@ -1,0 +1,32 @@
+/* 忘記密碼  */
+.forget-section .content div label {
+  font-size: 0.65rem;
+  color: #111;
+}
+.forget-section .content div.forget-pwd,
+.forget-section .content div.by-mail,
+.forget-section .content div.by-phone {
+  padding: 0.45rem 0 0.75rem;
+}
+.forget-section .content div.forget-usr {
+  padding: 0 0 0.75rem;
+}
+.forget-section .content div.by-phone {
+  padding-top: 0;
+}
+.forget-section .content div.mail-part,
+.forget-section .content div.phone-part {
+  display: none;
+}
+.forget-section .content .mail-part .valid-img {
+  margin-bottom: 0.75rem;
+}
+.forget-section .content .continue {
+  padding: 0.5rem 0 0.8rem;
+}
+#forget-main {
+  height: 19.9rem;
+}
+#forget-pwd {
+  height: 20.25rem;
+}

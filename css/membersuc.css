@@ -1,0 +1,186 @@
+button {
+  padding: 0;
+  border: 0;
+}
+table,
+th,
+td {
+  border: 1px solid #d2d2d2;
+  border-collapse: collapse;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  margin: 0;
+}
+.slick-dots {
+  bottom: 0rem;
+}
+.slick-dots li button:before {
+  font-size: 1rem;
+}
+.slick-dots li.slick-active button:before {
+  color: #2395c4;
+  opacity: 1.0;
+}
+.container {
+  width: 100%;
+}
+.container .congratuation {
+  width: 100%;
+  height: 5.5rem;
+  background-image: url("../imgs/background/Password_bg_960x330@3x.jpg");
+  background-size: 16rem;
+}
+.container .congratuation .successedimg {
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 1.4rem 0.6rem 1.4rem 1.5rem;
+  float: left;
+}
+.container .congratuation .sucword {
+  float: left;
+  height: 1.5rem;
+  margin-top: 1.4rem;
+}
+.container .congratuation .sucword .name {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 0.15rem;
+  margin-top: 0.25rem;
+}
+.container .congratuation .sucword .suctips {
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+.container .safetychoose .safetip {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  line-height: 2.1rem;
+  margin-left: 1rem;
+  float: left;
+}
+.container .safetychoose .choiceframe {
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+  width: 100%;
+  height: 4.8rem;
+}
+.container .safetychoose .choiceframe .personal {
+  height: 4.8rem;
+  width: 5.35rem;
+  text-align: center;
+  border-right: 1px solid #d2d2d2;
+  float: left;
+  background-color: #fafafa;
+}
+.container .safetychoose .choiceframe .personal .personalpic {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.3rem;
+}
+.container .safetychoose .choiceframe .personal .personaldata {
+  font-size: 0.6rem;
+  color: #73757b;
+  line-height: 1.1rem;
+}
+.container .safetychoose .choiceframe .cellphone {
+  height: 4.8rem;
+  width: 5.3rem;
+  float: left;
+  background-color: #fafafa;
+}
+.container .safetychoose .choiceframe .cellphone .cellphonepic {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.3rem;
+}
+.container .safetychoose .choiceframe .cellphone .cellphonedata {
+  font-size: 0.6rem;
+  color: #73757b;
+  line-height: 1.1rem;
+}
+.container .safetychoose .choiceframe .webmail {
+  height: 4.8rem;
+  width: 5.35rem;
+  text-align: center;
+  border-left: 0.05rem solid #d2d2d2;
+  float: left;
+  background-color: #fafafa;
+}
+.container .safetychoose .choiceframe .webmail .webmailpic {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.3rem;
+}
+.container .safetychoose .choiceframe .webmail .webmaildata {
+  font-size: 0.6rem;
+  color: #73757b;
+  line-height: 1.1rem;
+}
+.container .savemoney {
+  width: 100%;
+}
+.container .savemoney .savetip {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  line-height: 2.1rem;
+  margin-left: 1rem;
+}
+.container .savemoney .savearea {
+  width: 100%;
+  height: 2.8rem;
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .savemoney .savearea .savebutton {
+  background-color: #62a403;
+  height: 1.8rem;
+  width: 14.4rem;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0.8rem 0.5rem 0.8rem;
+  text-align: center;
+}
+.container .savemoney .savearea .savebutton .savew {
+  color: #ffffff;
+  line-height: 1.8rem;
+}
+.container .savemoney .savearea .savebutton .savew .mon {
+  font-size: 0.7rem;
+  display: inline-block;
+}
+.container .savemoney .savearea .savebutton .savew .save {
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.container .bannerarea {
+  width: 100%;
+}
+.container .bannerarea .bannertip {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  line-height: 2.1rem;
+  margin-left: 1rem;
+}
+.container .bannerarea .bannerslide {
+  overflow: hidden;
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.container .bannerarea .bannerslide .banneract {
+  float: left;
+  width: 100%;
+}
+.container .bannerarea .bannerslide .banneract .bannerimg {
+  width: 100%;
+  display: block;
+}

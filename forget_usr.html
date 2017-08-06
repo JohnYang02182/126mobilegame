@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>帐号恢复</title>
+	<script src="js/common.js"></script>		
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/forget.css">	
+</head>
+<body>
+	<header></header>
+
+	<div class="forget-section model page-model" id="forget-usr">
+		<div class="title">帐号恢复<span>|</span><span>忘记用户名</span></div>
+		
+		<div class="content">
+			<p class="main-comment">请选择下面一种帐户恢复方式</p>
+
+			<form id="forgetUsr">	
+				<!-- 通过绑定的信箱-->			
+				<div class="by-mail">
+					<input type="radio" id="mailSelected" name="radio" value="email">
+					<label for="mailSelected" class="clearfix">
+						<div>
+							<span class="outter"></span>
+							<span class="inner"></span>
+							<span class="text">通过绑定的邮箱地址</span>
+						</div>
+					</label>
+				</div>
+				<div class="mail-part">
+					<div class="text-field">
+						<input type="email" name="email" placeholder="请输入您在安全设置中绑定的电子邮件">
+						<span class="close"></span>
+					</div>
+					<div class="validate text-field">
+						<input type="text" name="mailValid" placeholder="验证码">
+						<span class="close"></span>
+					</div>
+				</div>
+				
+				<!-- 通过绑定的电话 -->
+				<div class="by-phone">
+					<input type="radio" id="cellphone" name="radio" value="cellphone">
+					<label for="cellphone" class="clearfix">
+						<div>
+							<span class="outter"></span>
+							<span class="inner"></span>
+							<span class="text">通过绑定的电话号码</span>
+						</div>					
+					</label>
+				</div>
+				<div class="phone-part">
+					<div class="text-field">
+						<input type="number" name="phone" placeholder="请输入您在安全设置中绑定的电话号码">
+						<span class="close"></span>
+					</div>
+					<div class="validate text-field">
+						<input type="text" name="phoneValid" placeholder="验证码">
+						<span class="close"></span>
+					</div>
+				</div>
+				<div class="valid-img">
+					<img src="imgs/Number_600x150@3x.jpg" alt="validcode">
+				</div>
+				<div class="continue"><input class="common-btn" type="submit" value="继续"></div>
+			</form>
+			<p class="comment">如果您未绑定电子邮箱或手机号码，要找回用户名或密码请联系在线客服。</p>
+		</div>
+	</div>
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			popLayer.init();
+			$('#mailSelected').attr('checked','checked');
+			$('.mail-part').fadeIn(600);
+			$('input[type="radio"]').on('change',function(){
+				var checked = $('input[type="radio"]:checked').val();
+				if(checked == "email"){
+					$('#mailSelected').attr('checked','checked');
+					$('#cellphone').attr('checked',false);
+					$('.phone-part').hide();
+					$('.mail-part').fadeIn(600);
+				}else{
+					$('#mailSelected').attr('checked',false);
+					$('#cellphone').attr('checked','checked');
+					
+					$('.mail-part').hide();
+					$('.phone-part').fadeIn(600);
+				}
+			});
+
+			//开启栏位验证
+	    	$("#forgetUsr").validate({
+	    		rules: {
+		    		email:{	    			
+		    			required: "input[id='mailSelected']:checked"
+		    		},
+		    		mailValid:{
+		    			required: "input[id='mailSelected']:checked",
+		    			numAndAlphabet: true
+		    		},
+		    		phone:{	    			
+		    			phoneCN: true,
+		    			required: "input[id='cellphone']:checked"
+		    		},
+		    		phoneValid:{
+		    			required: "input[id='cellphone']:checked",
+		    			numAndAlphabet: true
+		    		}
+		    	},	    	
+			    submitHandler: function(form) {			    	
+			    	$(this).submit();
+			    	//驗證錯誤則導至成功頁面
+			    	popLayer.showLayer("帐号恢复失败","未找到与您提供的信息相符帐户。请重试或联系在线客服，以获得更多帮助。","",false,function(){
+	    			    	//验证无误则导至成功页面
+	    					location.href = "accountsuc.html";
+			    	});
+			    	
+			    }		    
+			    // ,debug:true		    
+			});	
+		});
+	</script>
+</body>
+</html>
+
+
+
+

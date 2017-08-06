@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>消息中心</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/messagecenter.css">
+</head>
+<body>
+	<header></header>
+	<div class="container model">
+		<div class="title">
+			消息中心			
+			<span>|</span>
+			<span>未读消息（161）条</span>
+		</div>
+		<div class="messagelist">
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+			<div class="messagebox">
+				<p class="messagetitle">126重金招代理</p>
+				<p class="date">12-26 15:47 (查看)</p>
+			</div>
+		</div>
+		<div class="pagination clearfix">
+			<ul>
+				<li><a href="javascript:void(0);">首页</a></li>
+				<li><a href="javascript:void(0);">上一页</a></li>
+				<li><a href="javascript:void(0);">下一页</a></li>
+				<li><a href="javascript:void(0);">末页</a></li>
+				<li><span class="total-page">共<span>26</span>页</span></li>
+			</ul>
+			<div>					
+				<form id="paginationForm">
+					<input class="num" type="number" name="page" value="5" max="99">
+					<div class="go">GO</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>	
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">
+var mtimeoutHandle = null;
+var mpopLayer = {
+    init: function(){
+        //產生元件
+        var mhasLayer = $('#mlayer').length;
+        if(!mhasLayer){
+            $('body').append(`
+               <div class="moverlay" id="mlayer"> 
+                    <div class="messagelayer-wrap">            
+                        <div class="mlayer-content">      
+                            <p class="mtitle"></p>
+                            <div class="mcontentarea">
+                                <p class="msubtitle"></p>
+                                <p class="mtime"></p>
+                                <p class="mcontent01"></p>
+                                <p class="mcontent02"></p>
+                                <p class="mcontecttitle"></p>
+                                <p class="mcontect01"></p>
+                                <p class="mcontect02"></p>
+                                <div class="mbutarea">
+                                    <div class="mmeslayer-btn mmeslayer-ok">删除并关闭</div>
+                                    <div class="mmeslayer-cancel mmeslayer-2btn">关闭</div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            `);
+        }; 
+        
+        //點擊ok、取消、x按鈕
+        $('.mmeslayer-cancel,.mmeslayer-close').on('click', 
+        function() { 
+            mpopLayer.hideLayer(); 
+        });
+        // //點擊內容外區域自動關閉 
+        // $('.moverlay').on('click',  function(event) { 
+        //     if (event.target == this){ 
+        //         mpopLayer.hideLayer(); 
+        //     } 
+        // }); 
+        
+        //esc鍵關閉
+        $(document).keyup(function(event) { 
+            if (event.keyCode == 27) { 
+                mpopLayer.hideLayer(); 
+            } 
+        });  
+    },
+    showLayer: function showLayer(mtitle,msubtitle,mtime,mcontent01,mcontent02,mcontecttitle,mcontect01,mcontect02,mhasCancel,mcallback){ 
+        //展示層
+        var mlayer = $('#mlayer'), 
+            mlayerwrap = mlayer.find('.messagelayer-wrap');
+        mlayerwrap.find('.mtitle').text(mtitle);
+        mlayerwrap.find('.msubtitle').text(msubtitle);
+        mlayerwrap.find('.mtime').text(mtime);
+        mlayerwrap.find('.mcontent01').text(mcontent01);
+        mlayerwrap.find('.mcontent02').text(mcontent02);
+        mlayerwrap.find('.mcontecttitle').text(mcontecttitle);
+        mlayerwrap.find('.mcontect01').text(mcontect01);
+        mlayerwrap.find('.mcontect02').text(mcontect02);
+
+
+       
+        //是否有確認 fn
+        $('.mmeslayer-ok').off('click');
+        $('.mmeslayer-ok').on('click', function() { 
+            callback?callback():mpopLayer.hideLayer();
+        });
+        mlayer.fadeIn(); 
+
+        //畫面居中
+        mlayerwrap.css({ 
+            'margin-top': -mlayerwrap.outerHeight()/2 
+        }); 
+        //鎖住背景
+        $(".moverlay").on("touchmove",handler,false);
+        mlayer.fadeIn(); 
+    },
+    hideLayer: function (){ 
+        //隱藏
+        $('.moverlay').fadeOut(); 
+        clearTimeout(timeoutHandle);
+        $(".moverlay").off("touchmove",handler,false);
+    }
+} 
+	$(function(){
+
+	    mpopLayer.init();
+	    $('.messagelayer-wrap').css('overflow-y','scroll'); 
+	    $('.messagebox').on('click',function(){
+	        mpopLayer.showLayer("消息详情","126重金招代理","2016-12-26 15:47:35","领先的合营方式佣金，高达50%利润诚信缔造双赢。您的每一份努力，我们都铭记在“薪”。","0手续、0费用，更有多种推广工具，让您的合营事业如虎添翼。让我们帮您成就事业！马上就能赚钱，终生享受丰厚的收益！","代理联系","QQ：1262785538、979087254","微信：Lucky126bet",function(){
+	            console.log("OK");
+	            mpopLayer.hideLayer(); 
+	        });
+	    });
+	})
+</script>
+
+</html>

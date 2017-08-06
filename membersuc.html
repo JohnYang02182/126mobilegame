@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>membersuc</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/membersuc.css">
+</head>
+<body>
+	<header></header>
+	<div class="container model">
+		<div class="congratuation">
+			<img class="successedimg" src="imgs/icons/RegisteredMember_220x220@3x.png">
+			<div class="sucword">
+				<p class="name">恭/喜/您，ZhanShan</p>
+				<p class="suctips">您已经成功注册126直营网会员</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="safetychoose">
+			<p class="safetip">为了您的帐号安全，强烈建议您先</p>
+			<div class="clearfix"></div>
+			<div class="choiceframe">
+				<a href="member.html">
+					<button class="personal">
+						<img class="personalpic" src="imgs/icons/Personal_enable212x212@3x.png">
+						<p class="personaldata">个人资料</p>
+					</button>
+				</a>
+				<a href="binding_phone.html">
+					<button class="cellphone">
+						<img class="cellphonepic" src="imgs/icons/Moblie_enable212x212@3x.png">
+						<p class="cellphonedata">绑定手机号</p>
+					</button>
+				</a>
+				<a href="binding_mail.html">
+					<button class="webmail">
+						<img class="webmailpic" src="imgs/icons/Email_enable212x212@3x.png">
+						<p class="webmaildata">绑定电子邮件</p>
+					</button>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="savemoney">
+			<p class="savetip">或者现在就存款开始体验刺激游戏吧</p>
+			<div class="savearea">
+				<a href="savemoney.html">
+					<button class="savebutton">
+						<div class="savew"><div class="mon">￥</div> <div class="save">存款</div></div>
+					</button>
+				</a>
+			</div>
+		</div>
+		<div class="bannerarea">
+			<p class="bannertip">要么在逛逛看看我们的给力活动</p>
+			<div class="bannerslide">
+				<div class="banneract"><img class="bannerimg" src="imgs/banner/B01.jpg"></div>
+				<div class="banneract"><img class="bannerimg" src="imgs/banner/B02.jpg"></div>
+				<div class="banneract"><img class="bannerimg" src="imgs/banner/B03.jpg"></div>
+				<div class="banneract"><img class="bannerimg" src="imgs/banner/B04.jpg"></div>
+				<div class="banneract"><img class="bannerimg" src="imgs/banner/B05.jpg"></div>
+			</div>
+		</div>
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+	
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script src="js\slick.min.js"></script>
+<script>
+	$(function(){
+
+		$('.bannerslide').slick({
+			infinite:true,
+			swipe:true,
+			dots:true,
+			fade:true,
+			autoplay:true,
+			autoplaySpeed:3000
+		});
+
+
+		$('.personal').on('click',function(){
+			$('.personalpic').attr('src','imgs/icons/Personal_focus212x212@3x.png');
+			$('.cellphonepic').attr('src','imgs/icons/Moblie_enable212x212@3x.png');
+			$('.webmailpic').attr('src','imgs/icons/Email_enable212x212@3x.png');
+		});
+
+		$('.cellphone').on('click',function(){
+			$('.cellphonepic').attr('src','imgs/icons/Moblie_focus212x212@3x.png');
+			$('.personalpic').attr('src','imgs/icons/Personal_enable212x212@3x.png');
+			$('.webmailpic').attr('src','imgs/icons/Email_enable212x212@3x.png');
+		});
+
+		$('.webmail').on('click',function(){
+			$('.webmailpic').attr('src','imgs/icons/Email_focus212x212@3x.png');
+			$('.personalpic').attr('src','imgs/icons/Personal_enable212x212@3x.png');
+			$('.cellphonepic').attr('src','imgs/icons/Moblie_enable212x212@3x.png');			
+		});
+});
+		
+</script>
+</html>

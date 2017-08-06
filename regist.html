@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>注册会员</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">		
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">
+	<style>
+		#content{
+			position: static;		
+			display: block;
+		}		
+	</style>
+	</style>
+</head>
+<body>
+	<header></header>
+
+	<div class="regist-section model box-model" id="content">
+		<div class="title">注册会员<span>|</span><span>开户首存优惠高达888元</span></div>
+		
+		<div class="content">
+			<form class="registPage" id="loginForm">
+				<div class="acc text-field required"><input type="text" name="regAccount" placeholder="用户名"><span class="close"></span></div>	
+
+				<div class="pwd text-field required"><input type="password" name="regPassword" id="password" placeholder="密码"><span class="close"></span></div>
+
+				<div class="pwd-confirm text-field required"><input type="password" name="passwordConfirm" placeholder="确认密码"><span class="close"></span></div>
+
+				<div class="phone text-field required"><input type="number" name="phone" placeholder="手机号码"><span class="close"></span></div>
+
+				<div class="mail text-field"><input type="email" name="mail" placeholder="电子邮箱"><span class="close"></span></div>
+
+				<div class="recommend text-field"><input type="text" name="recommend" placeholder="推荐代码"><span class="close"></span></div>
+
+				<div class="validate text-field required"><input type="text" name="valid" placeholder="验证码"><span class="close"></span></div>
+				<div class="valid-img">
+					<img src="imgs/Number_600x150@3x.jpg" alt="validcode">
+				</div>
+				<div class="errMsg"></div>
+				<div class="submit"><input class="common-btn" type="submit" name="submit" value="立即注册"></div>				
+				<p class="regist-comment">点击＂立即注册＂即表示我已年满18周岁，并已阅读并接受【126直营网】相关条款和隐私权政策。</p>		
+			</form>					
+		</div>
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">	
+	$(document).ready(function() {
+		//开启栏位验证
+	    $(".registPage").validate({
+	    	rules: {
+	    		regAccount:{
+	    			minlength : 4,
+	    			maxlength : 12,
+	    			userName : true,
+	    			numAndAlphabet: true
+	    		},
+	    		regPassword:{
+	    			minlength : 6,
+	    			maxlength : 12,
+	    			pwd : true,
+	    			numAndAlphabet: true
+	    		},
+	    		passwordConfirm:{
+	    			minlength : 6,
+	    			maxlength : 12,
+	    			equalTo : "#password",
+	    			chkPwd: true
+	    		},
+	    		phone:{
+	    			phoneCN : true,
+	    			required: true
+	    		},
+	    		recommend:{
+	    			numAndAlphabet: true
+	    		},
+	    		valid:{
+	    			required: true,
+	    			numAndAlphabet: true
+	    		}
+
+	    	},	    	
+		    submitHandler: function(form) {			    	
+		    	$(this).submit();
+		    	console.log("注册.... ");
+		    }		    
+		    // ,debug:true
+		});
+	});
+</script>
+</html>
+
+
+
+

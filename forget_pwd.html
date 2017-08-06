@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>忘记密码</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">	
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/forget.css">	
+</head>
+<body>
+	<header></header>
+
+	<div class="forget-section model page-model" id="forget-pwd">
+		<div class="title">帐号恢复<span>|</span><span>忘记密码</span></div>
+		
+		<div class="content">
+			<form id="forgetPwd">
+				<p class="main-comment">要重置密码，请输入您的帐户信息。可以是您的用户名、或您绑定的电话号码、电子邮箱地址。</p>
+				<div class="text-field">
+					<input type="text" name="acc" placeholder="用户名/电子邮箱/手机号码">
+					<span class="close"></span>
+				</div>	
+				<div class="validate text-field">
+					<input type="text" name="valid" placeholder="验证码">
+					<span class="close"></span>
+				</div>
+				<div class="valid-img">
+					<img src="imgs/Number_600x150@3x.jpg" alt="validcode">
+				</div>
+				<div class="errMsg">帐号或密码不符</div>
+				<div class="continue"><input class="common-btn" type="submit" value="继续"></div>
+				<p class="comment">如果您未绑定电子邮箱或手机号码，要找回用户名或密码请联系在线客服。</p>
+			</form>
+		</div>
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			popLayer.init();
+			$('#pwd').attr('checked','checked');	
+			//開啟欄位驗證
+	    	$("#forgetPwd").validate({
+	    		rules: {
+		    		acc:{	    			
+		    			required:true
+		    		},
+		    		valid:{
+		    			required: true,
+		    			numAndAlphabet: true
+		    		}
+		    	},	    	
+			    submitHandler: function(form) {			    	
+			    	$(this).submit();
+		    		//驗證錯誤則導至成功頁面
+		    		popLayer.showLayer("帐号恢复失败","未找到与您提供的信息相符帐户。请重试或联系在线客服，以获得更多帮助。","",false,function(){
+	    			    	//驗證無誤則導至成功頁面
+	    					location.href = "passwordsuc.html";
+	    				});	
+			    }		    
+			    // ,debug:true		    
+			});		
+		});
+	</script>
+</body>
+</html>
+
+
+
+

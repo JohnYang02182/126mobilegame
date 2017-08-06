@@ -1,0 +1,143 @@
+button {
+  padding: 0;
+  border: 0;
+}
+table,
+th,
+td {
+  border: 0.05rem solid #d2d2d2;
+  border-collapse: collapse;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  margin: 0;
+}
+input {
+  border: none;
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+.container .savemoneytitle {
+  width: 14.4rem;
+  padding: 0 0.8rem;
+  background-color: #fafafa;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .savemoneytitle .savemoneytext {
+  font-size: 0.85rem;
+  color: #73757b;
+  line-height: 2.1rem;
+}
+.container .choosetextarea {
+  width: 14.4rem;
+  padding: 0 0.8rem;
+}
+.container .choosetextarea .choosetext {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  line-height: 2.1rem;
+}
+.container .choosemethod {
+  width: 100%;
+  height: 4.8rem;
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .choosemethod .method01 {
+  width: 4rem;
+  height: 4.8rem;
+  border-right: 0.05rem solid #d2d2d2;
+  float: left;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.container .choosemethod .method01 .thethird {
+  width: 3.95rem;
+}
+.container .choosemethod .method01 p {
+  margin-top: -0.25rem;
+  font-size: 0.6rem;
+  color: #73757b;
+}
+.container .choosemethod .method02 {
+  width: 4rem;
+  height: 4.8rem;
+  border-right: 0.05rem solid #d2d2d2;
+  float: left;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.container .choosemethod .method02 .wesin {
+  width: 3.95rem;
+}
+.container .choosemethod .method02 p {
+  margin-top: -0.25rem;
+  font-size: 0.6rem;
+  color: #73757b;
+}
+.container .choosemethod .method03 {
+  width: 4rem;
+  height: 4.8rem;
+  border-right: 0.05rem solid #d2d2d2;
+  float: left;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.container .choosemethod .method03 .paybaw {
+  width: 3.95rem;
+}
+.container .choosemethod .method03 p {
+  margin-top: -0.25rem;
+  font-size: 0.6rem;
+  color: #73757b;
+}
+.container .choosemethod .method04 {
+  width: 4rem;
+  height: 4.8rem;
+  float: left;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.container .choosemethod .method04 .transbank {
+  width: 3.95rem;
+}
+.container .choosemethod .method04 p {
+  margin-top: -0.25rem;
+  font-size: 0.6rem;
+  color: #73757b;
+}
+.container .entersavemoney {
+  width: 14.4rem;
+  padding: 0.8rem 0.8rem 0 0.8rem;
+}
+.container .entersavemoney .entertext {
+  font-size: 0.65rem;
+  color: #8c8c8c;
+  margin-bottom: 0.8rem;
+}
+.container .entersavemoney .infoinputbox {
+  margin-bottom: 0;
+}
+.container .entersavemoney .infoinputbox #inputmon {
+  margin-bottom: 0.8rem;
+}
+.container .line {
+  width: 15.2rem;
+  margin-left: 0.8rem;
+  height: 0.05rem;
+  background-color: #e6e6e6;
+}
+.container .nextpage {
+  margin: 1.25rem 0;
+  margin-left: 0.8rem;
+}

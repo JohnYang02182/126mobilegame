@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>已綁定信用卡</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/member.css">		
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/creditcardtied.css">	
+</head>
+<body>
+	<header></header>
+	<div class="container model page-model">
+		<div class="title">
+			綁定銀行卡
+		</div>
+		<div class="content">
+			<div class="tiedbanksub">
+				<p>綁定銀行卡</p>
+			</div>
+			<div class="creditcardarea">
+				<div class="bannerslider">
+					<div class="bankcardinfo">
+						<img src="imgs/logo/CardCcb_114x114@3x.png" class="banklogo">
+						<img src="imgs/icons/Circle_34x34@2x.png" class="correction">
+						<div class="memberinfoarea">
+							<p class="membername">张三</p>
+							<p class="bankname">中国建设银行</p>
+							<p class="addressinfo">九江分行九江县庐山西路256号</p>
+							<p class="cardnumber">0012234556780000</p>
+						</div>
+						<p class="locationinfo">江西，九江</p>
+						<p class="tieddate">绑定：2016-08-19 18:16</p>
+					</div>
+					<div class="bankcardinfo">
+						<img src="imgs/logo/CardCcb_114x114@3x.png" class="banklogo">
+						<img src="imgs/icons/Circle_34x34@2x.png" class="correction">
+						<div class="memberinfoarea">
+							<p class="membername">李四</p>
+							<p class="bankname">中国建设银行</p>
+							<p class="addressinfo">九江分行九江县庐山西路256号</p>
+							<p class="cardnumber">0012234556780000</p>
+						</div>
+						<p class="locationinfo">江西，九江</p>
+						<p class="tieddate">绑定：2016-08-19 18:16</p>
+					</div>
+				</div>
+				<div class="tip">您最多<strong>可绑定三张银行卡</strong>，已绑定的银行如需更改，请联系在线客服。</div>
+			</div>
+			<div class="tiedbanksub">
+				<p>绑定新的银行卡</p>
+			</div>
+			<div class="creditcardinfo">
+				<form id="creditinfo" class="creditinfo">
+					<div class="membernametext">
+						<div class="infotitle">开户姓名</div>
+						<div class="infoinputbox">
+							<input type="text" id="name" class="blockinput" disabled="disabled" placeholder="张**" name="name" required>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="bankcard">
+						<div class="infotitle">银行卡号</div>
+						<div class="creditcard infoinputbox">
+							<input type="number" id="creditcard" class="infoinput" name="creditcard" length="16" placeholder="请真实准确输入并仔细核对">
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="bankname">
+					<div class="infotitle">银行名称</div>
+					<div class="infoselectbox">
+						<select class="infoselect" name="bankselect">
+							<option>选择银行</option>
+							<option>中国银行</option>
+							<option>工商银行</option>
+							<option>建设银行</option>
+							<option>农业银行</option>
+							<option>招商银行</option>
+							<option>民生银行</option>
+							<option>光大银行</option>
+							<option>交通银行</option>
+							<option>中国邮政</option>
+						</select>
+					</div>
+					</div>
+					<div class="line2"></div>
+					<div class="infotitle">开户地址</div>
+					<div data-toggle="distpicker">
+						<div class="infoselectbox">
+							<select data-province="选择省" class="infoselect" name="cityselect"></select>
+						</div>
+						<div class="line2"></div>
+						<div class="infoselectbox">
+							<select data-city="选择市" class="infoselect" name="areaselect"></select>
+						</div>
+						<div class="line2"></div>
+						<div class="infoselectbox">
+							<select data-district="选择区" class="infoselect" name="streetselect"></select>
+						</div>
+					</div>
+					<div class="line"></div>
+					<input type="submit" name="submit" class="clicktotied common-btn" value="绑定">
+				</form>
+			</div>
+		</div>
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\distpicker.min.js"></script>
+<script src="js\share.js"></script>
+<script src="js\slick.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('.bannerslider').slick({
+			infinite:true,
+			swipe:true,
+			dots:true,
+			fade:true,
+			autoplay:false
+		});
+	});
+	$(document).ready(function() {
+		var name = $('.membername');
+		var number = $('.cardnumber');
+		$("#creditinfo").validate({
+		 	rules: {
+		 		name:{
+		 			required:true,
+		 			userName:true,
+		 			maxlength:4,
+		 			chinese:true
+		 		},
+		 		creditcard:{
+		 			required:true,
+		 			creditcardtype:true
+		 		},
+		 		bankselect:{
+		 			bankchoice:true
+		 		},
+		 		cityselect:{
+		 			citychoice:true
+		 		},
+		 		areaselect:{
+		 			areachoice:true
+		 		},
+		 		streetselect:{
+		 			streetchoice:true
+		 		}
+		 	},
+
+		    submitHandler: function(form) {			    	
+		    	$(this).submit();
+		    	//驗證無誤則導至成功頁面
+				location.href = "creditcardfinishtied.html";
+		    	console.log("新增成功.... ");
+		    }		 
+		});
+		
+		name.text(stringToStars(name.eq(0).text(),"name"));
+		number.text(stringToStars(number.eq(0).text(),"card"));
+	});
+	
+</script>
+</html>

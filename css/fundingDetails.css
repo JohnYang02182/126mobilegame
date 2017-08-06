@@ -1,0 +1,28 @@
+#fundingDetails {
+  position: static;
+  display: block;
+  color: #8c8c8c;
+}
+#fundingDetails .sub-title {
+  font-size: 0.75rem;
+  padding-right: 0.8rem;
+}
+#fundingDetails .sub-title div:first-of-type {
+  float: left;
+}
+#fundingDetails .sub-title div:last-of-type {
+  float: right;
+}
+#fundingDetails .content .sections p:first-of-type {
+  float: left;
+}
+#fundingDetails .content .sections p:last-of-type {
+  float: right;
+  padding-right: 0.8rem;
+}
+#fundingDetails .content .sections {
+  font-size: 0.65rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 0.05rem solid rgba(206, 206, 210, 0.5);
+}

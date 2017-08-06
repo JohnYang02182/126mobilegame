@@ -1,0 +1,148 @@
+#transactionRecord {
+  position: static;
+  display: block;
+  margin-bottom: -0.85rem;
+  /*無資料時顯示*/
+}
+#transactionRecord .filters {
+  margin-left: 0.8rem;
+  margin-top: 0.2rem;
+  font-size: 0.65rem;
+  padding-bottom: 0.6rem;
+}
+#transactionRecord .filters ul {
+  color: #238eb5;
+  text-align: center;
+  padding: 0.6rem 0.8rem 0.6rem 0;
+  border-bottom: 0.05rem solid #ffffff;
+}
+#transactionRecord .filters ul li {
+  box-sizing: border-box;
+  width: 2.6rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  border: 0.05rem solid #238eb5;
+  border-radius: 0.7rem;
+  float: left;
+  margin-right: 0.35rem;
+}
+#transactionRecord .filters ul li:last-of-type {
+  margin-right: 0;
+}
+#transactionRecord .filters ul li.active {
+  color: #fff;
+  background-color: #238eb5;
+}
+#transactionRecord .filters ul.operationFilter,
+#transactionRecord .filters ul.statusFilter {
+  color: #eb8002;
+  text-align: center;
+  padding: 0.6rem 0.8rem 0.6rem 0;
+  border-bottom: 0.05rem solid rgba(206, 206, 210, 0.5);
+}
+#transactionRecord .filters ul.operationFilter li,
+#transactionRecord .filters ul.statusFilter li {
+  box-sizing: border-box;
+  width: 2.6rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  border: 0.05rem solid #eb8002;
+  border-radius: 0.7rem;
+  float: left;
+  margin-right: 0.35rem;
+}
+#transactionRecord .filters ul.operationFilter li:last-of-type,
+#transactionRecord .filters ul.statusFilter li:last-of-type {
+  margin-right: 0;
+}
+#transactionRecord .filters ul.operationFilter li.active,
+#transactionRecord .filters ul.statusFilter li.active {
+  color: #fff;
+  background-color: #eb8002;
+}
+#transactionRecord .filters .sub-filter {
+  display: none;
+}
+#transactionRecord .filters .sub-filter ul:last-of-type {
+  border-bottom: none;
+}
+#transactionRecord .filters .fn-btn {
+  height: 2rem;
+  line-height: 2rem;
+  width: 14.4rem;
+  box-sizing: border-box;
+  border: 0.05rem solid #238eb5;
+  font-weight: bold;
+  color: #73757b;
+  text-align: center;
+}
+#transactionRecord .filters .fn-btn span.icon {
+  width: 0.7rem;
+  height: 0.65rem;
+  display: inline-block;
+  background: url('../imgs/icons/AboutMe_arrow_56x56@3x.png') no-repeat center;
+  background-size: 0.7rem 0.65rem !important;
+  background-origin: content-box !important;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+#transactionRecord .filters .fn-btn span.icon.active {
+  background: url('../imgs/icons/AboutMe_arrowup_56x56@3x.png') no-repeat center;
+}
+#transactionRecord .content {
+  padding: 0;
+  font-size: 0.6rem;
+}
+#transactionRecord .content .blocks {
+  background-color: #f9f9f9;
+  border-top: 1px solid #d2d2d2;
+  padding: 0.6rem 0.8rem;
+}
+#transactionRecord .content .blocks .date {
+  color: #4a8fa0;
+  padding-bottom: 0.4rem;
+  font-weight: bold;
+}
+#transactionRecord .content .blocks .date .bg {
+  font-size: 0.8rem;
+}
+#transactionRecord .content .blocks table {
+  border-spacing: 0;
+}
+#transactionRecord .content .blocks table th,
+#transactionRecord .content .blocks table td {
+  width: 4.55rem;
+  text-align: left;
+  color: #73757b;
+  padding: 0;
+  line-height: 0.9rem;
+  font-size: 0.65rem;
+}
+#transactionRecord .content .blocks table th:nth-of-type(2),
+#transactionRecord .content .blocks table td:nth-of-type(2) {
+  width: 5.3rem;
+}
+#transactionRecord .content .blocks table th {
+  font-weight: normal;
+}
+#transactionRecord .content .pagination {
+  border-top: 1px solid #d2d2d2;
+  padding: 0.6rem 0.55rem 0.8rem;
+}
+#transactionRecord .no-data {
+  text-align: center;
+  height: 16rem;
+  border-top: 1px solid #d2d2d2;
+  display: none;
+}
+#transactionRecord .no-data img {
+  width: 3.8rem;
+  height: 3.8rem;
+  margin-top: 5.4rem;
+}
+#transactionRecord .no-data p {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #73757b;
+}

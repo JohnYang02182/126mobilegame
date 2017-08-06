@@ -1,0 +1,98 @@
+p {
+  margin: 0;
+}
+table,
+th,
+td {
+  border: 0.05rem solid #d2d2d2;
+  border-collapse: collapse;
+}
+ol {
+  margin: 0;
+  padding: 0;
+}
+select {
+  border: none;
+}
+button {
+  border: none;
+  padding: 0;
+}
+input {
+  border: none;
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+.container .content {
+  padding: 0;
+}
+.container .content .takemoneysub {
+  width: 15.2rem;
+  padding-left: 0.8rem;
+  height: 2rem;
+}
+.container .content .takemoneysub p {
+  font-size: 0.7rem;
+  color: #73757b;
+  line-height: 2rem;
+  float: left;
+}
+.container .content .takemoneysub .remainmoney {
+  font-size: 0.9rem;
+  color: #73757b;
+  line-height: 2rem;
+  float: left;
+  margin-left: 0.05rem;
+}
+.container .content .line {
+  height: 0.05rem;
+  width: 15.2rem;
+  padding-left: 0.8rem;
+  background-color: #d2d2d2;
+}
+.container .content .inputmoneyarea {
+  width: 14.4rem;
+  padding: 0 0.8rem;
+}
+.container .content .inputmoneyarea .takemoneytip {
+  font-size: 0.65rem;
+  line-height: 2.25rem;
+  color: #8c8c8c;
+}
+.container .content .inputmoneyarea .infoinputbox {
+  margin-bottom: 0.8rem;
+}
+.container .content .moneynotenough {
+  width: 15.2rem;
+  padding-left: 0.8rem;
+  font-size: 0.6rem;
+  color: #ff0000;
+  margin-bottom: 0.8rem;
+}
+.container .content .subtitle {
+  width: 15.2rem;
+  height: 2rem;
+  padding-left: 0.8rem;
+  font-size: 0.7rem;
+  color: #73757b;
+  line-height: 2rem;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .content .creditcardarea {
+  width: 14.4rem;
+  padding: 0.8rem 0.8rem 0 0.8rem;
+  background-color: #f9f9f9;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .content .creditcardarea .bankcardinfo {
+  margin-bottom: 0.8rem;
+}
+.container .content .creditcardarea .nobankcardinfo {
+  margin-bottom: 0.8rem;
+}
+.container .content .nextstep {
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+}

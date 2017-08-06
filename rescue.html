@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>救援金申请</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">		
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/rescue.css">	
+</head>
+<body>
+	<header></header>
+
+	<div class="model" id="rescue">
+		<div class="title">救援金</div>
+		<div class="content">	
+			<p>1. 24小时内累计存款达到200.0元为符合条件申请此优惠。可多次申请。</p>
+			<p>2. 需要达到救援金申请条件才可申请。</p>
+			<p>3. 申请首存后将不可以申请救援金。</p>
+			<p>4. 审查无误，救援奖金会在申请后的15分钟内派发到申请本优惠的玩家主帐户。</p>
+		</div>		
+		<div class="rescue-application">
+			<input class="common-btn" type="button" value="申请救援金">
+		</div>
+	</div>
+	
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			popLayer.init();
+			sucBox.init();
+		    $('.rescue-application input').on('click',function(){
+		        popLayer.showLayer("申请救援金失败","抱歉，申请救援金负营利金额不能低于195元。","",false,function(){
+			            console.log("popup ok!");
+			            popLayer.hideLayer(); 
+			            sucBox.showBox("申请救援金成功");
+		        });
+		    });
+		});
+	</script>
+</body>
+</html>
+
+
+
+

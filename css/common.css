@@ -1,0 +1,645 @@
+/*更改輸入框提示字的顏色*/
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #8c8c8c;
+}
+.model {
+  /* Title */
+  /* 關閉 & 欄位內容消除之ICON  */
+  /* 共用按鈕樣式 */
+  /*欄位之disabled*/
+  /*驗證碼*/
+  /*欄位驗證之錯誤訊息*/
+  /*按鈕上方之錯誤訊息*/
+  /*新增select欄位*/
+  /*新增input欄位*/
+}
+.model .title {
+  background-color: #f9f9f9;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  padding-left: 0.8rem;
+  border-bottom: 1px solid #d2d2d2;
+  color: #73757b;
+  font-size: 0.85rem;
+  font-weight: bold;
+  position: relative;
+}
+.model .title span:nth-of-type(1) {
+  font-size: 0.85rem;
+  padding: 0 0.5rem;
+}
+.model .title span:nth-of-type(2) {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #73757b;
+}
+.model .close {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  color: #73757b;
+  font-size: 0.85rem;
+  display: none;
+  background: url('../imgs/icons/Close_132x132@3x.png') no-repeat center;
+  background-size: 2rem 2rem !important;
+  z-index: 1;
+}
+.model input.common-btn {
+  border-radius: 0.4rem;
+  line-height: 1.8rem;
+  width: 14.4rem;
+  border: none;
+  background-color: #238eb5;
+  padding: 0;
+  outline: none;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.model input.common-btn.forget-btn {
+  background-color: #bcc1c3;
+}
+.model .disable {
+  opacity: 0.3;
+}
+.model .valid-img {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+.model .valid-img img {
+  width: 10rem;
+  height: 2.5rem;
+}
+.model label.error {
+  color: #ff0000 !important;
+  display: block;
+  font-size: 0.6rem;
+  padding-bottom: 0.6rem;
+  line-height: 0.65rem;
+  margin-left: 0.4rem;
+}
+.model .errMsg {
+  margin: 0;
+  color: #ff0000;
+  font-size: 0.6rem;
+  line-height: 2rem;
+  text-align: center;
+  display: none;
+}
+.model .infoselectbox {
+  width: 14.4rem;
+  margin-bottom: 0.8rem;
+}
+.model .infoselectbox .infoselect {
+  width: 14.4rem;
+  padding-left: 0.5rem;
+  height: 1.5rem;
+  background: url('../imgs/icons/Bank_DownArrow_90x90@3x.png') no-repeat #e1e1e1 12.8rem;
+  background-size: 1.5rem;
+  border-radius: 0.15rem;
+  -webkit-appearance: none;
+  font-size: 0.65rem;
+  color: #8c8c8c;
+}
+.model .infoinputbox {
+  width: 14.4rem;
+  margin-bottom: 0.8rem;
+}
+.model .infoinputbox .infoinput {
+  background-color: #e1e1e1;
+  border-radius: 0.15rem;
+  height: 1.5rem;
+  width: 13.9rem;
+  font-size: 0.65rem;
+  color: #8c8c8c;
+  padding-left: 0.5rem;
+  line-height: 1.5rem;
+}
+/*For tabBar & login page*/
+.box-model {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  bottom: 2.5rem;
+  display: none;
+}
+.box-model .title .close {
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+}
+.box-model .content {
+  /*必填欄位之星號*/
+}
+.box-model .content div {
+  margin-left: 0.8rem;
+  position: relative;
+}
+.box-model .content .text-field {
+  border-bottom: 1px solid rgba(206, 206, 210, 0.5);
+}
+.box-model .content .text-field input {
+  border-radius: 0.4rem;
+  line-height: 1.8rem;
+  width: 14.4rem;
+  border: none;
+  padding: 0;
+  outline: none;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 0.65rem;
+  color: #73757b;
+}
+.box-model .content .text-field::before {
+  content: '';
+  color: #ff7200;
+  display: block;
+  font-size: 0.65rem;
+  float: left;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 0.4rem;
+}
+.box-model .content .text-field.required::before {
+  content: '*';
+}
+/*For normal page*/
+.page-model {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  background-color: #fff;
+}
+.page-model .content {
+  padding: 0.8rem 0.8rem 0 0.8rem;
+}
+.page-model .content p.main-comment {
+  font-size: 0.6rem;
+  color: #73757b;
+  padding-bottom: 0.8rem;
+}
+.page-model .content p.comment {
+  font-size: 0.55rem;
+  color: #111;
+  line-height: 0.75rem;
+  padding-bottom: 0.8rem;
+}
+.page-model .content .text-field {
+  position: relative;
+  padding: 0 0 0.3rem;
+}
+.page-model .content .text-field input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0.15rem;
+  background-color: #e1e1e1;
+  color: #858585;
+  font-size: 0.65rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  outline: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  width: 14.4rem;
+}
+.page-model label.error {
+  padding-top: 0.6rem;
+}
+/* custom goTop button  */
+#goTop {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  background: url('../imgs/icons/Top_enable_150x150@3x.png') no-repeat center;
+  background-size: 2.5rem 2.5rem !important;
+  border-radius: 50%;
+  opacity: .8;
+  bottom: 7.4rem;
+  right: 0.4rem;
+}
+/* End goTop button  */
+/* custom radio button  */
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  color: #000;
+  cursor: pointer;
+}
+input[type="radio"] + label div {
+  position: relative;
+  float: left;
+  height: 0.9rem;
+  line-height: 0.9rem;
+}
+input[type="radio"] + label div span {
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+input[type="radio"] + label div span.text {
+  margin-left: 0.65rem;
+  font-size: 0.65rem;
+}
+input[type="radio"] + label div span.outter,
+input[type="radio"] + label div span.inner {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+input[type="radio"] + label div span.outter {
+  border: 0.05rem solid #238eb5;
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  position: relative;
+  float: left;
+}
+input[type="radio"] + label div span.inner {
+  width: 0.9rem;
+  height: 0.9rem;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+input[type="radio"]:checked + label span.inner {
+  background-color: #238eb5;
+}
+/* End radio button  */
+/* popup */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99998;
+}
+.overlay .layer-wrap {
+  box-sizing: border-box;
+  width: 13.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6.75rem;
+  /*回推總寬一半*/
+  border-radius: 0.6rem;
+  background-color: #fff;
+  box-shadow: 0.05rem 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-size: 0.85rem;
+  color: #111;
+  overflow: hidden;
+  z-index: 99999;
+}
+.overlay .layer-wrap dl {
+  width: 12rem;
+  margin: 0 auto;
+}
+.overlay .layer-wrap .title {
+  padding: 1.1rem 0 0.35rem;
+  font-weight: bold;
+  line-height: 0.85rem;
+}
+.overlay .layer-wrap .details {
+  padding: 0.1rem 0 1rem;
+  font-size: 0.65rem;
+  line-height: 0.95rem;
+}
+.overlay .layer-wrap .timetext {
+  float: left;
+  margin-left: 3rem;
+  font-size: 0.65rem;
+  line-height: 1.05rem;
+  padding-bottom: 0.75rem;
+}
+.overlay .layer-wrap #timer {
+  font-size: 0.9rem;
+  color: #238eb5;
+  float: left;
+  padding-bottom: 0.75rem;
+}
+.overlay .layer-wrap .roletext {
+  width: 12rem;
+  font-size: 0.55rem;
+  -webkit-transform: scale(0.83);
+  line-height: 0.8rem;
+  color: #73757b;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.overlay .layer-wrap .contactService {
+  font-weight: bold;
+  color: #238eb5;
+  text-decoration: underline;
+}
+.overlay .layer-wrap .layer-close {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  display: none;
+}
+.overlay .layer-wrap .layer-btn {
+  width: 100%;
+  height: 2.2rem;
+  color: #238eb5;
+  border-top: 0.05rem solid rgba(210, 210, 210, 0.5);
+  line-height: 2.2rem;
+  box-sizing: border-box;
+}
+.overlay .layer-wrap .layer-cancel {
+  display: none;
+  border-left: 0.05rem solid rgba(210, 210, 210, 0.5);
+}
+.overlay .layer-wrap .layer-2btn {
+  width: 50%;
+  float: left;
+}
+/*訊息中心popup*/
+.moverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99998;
+}
+.moverlay .messagelayer-wrap {
+  box-sizing: border-box;
+  width: 14.4rem;
+  padding-bottom: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -7.2rem;
+  /*回推總寬一半*/
+  background-color: #fff;
+  box-shadow: 0.05rem 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.moverlay .messagelayer-wrap .mtitle {
+  line-height: 2.2rem;
+  height: 2.2rem;
+  border-bottom: 0.05rem solid #d2d2d2;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #73757b;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea .msubtitle {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-top: 0.8rem;
+  color: #73757b;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mtime {
+  color: #8c8c8c;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mcontent01 {
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  margin-bottom: 0.35rem;
+  color: #8c8c8c;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mcontent02 {
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  margin-bottom: 0.35rem;
+  color: #8c8c8c;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mcontecttitle {
+  font-size: 0.6rem;
+  font-weight: bold;
+  line-height: 0.85rem;
+  margin-top: 0.3rem;
+  color: #73757b;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mcontect01 {
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  color: #8c8c8c;
+  line-height: 0.6rem;
+  margin-bottom: 0.1rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mcontect02 {
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  margin-bottom: 0.75rem;
+  color: #8c8c8c;
+  line-height: 0.6rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mbutarea {
+  width: 13.4rem;
+  height: 1.8rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mbutarea .mmeslayer-btn {
+  width: 6.25rem;
+  height: 1.8rem;
+  float: left;
+  border-radius: 0.4rem;
+  background-color: #a42503;
+  color: white;
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+}
+.moverlay .messagelayer-wrap .mcontentarea .mbutarea .mmeslayer-2btn {
+  width: 6.25rem;
+  height: 1.8rem;
+  float: left;
+  border-radius: 0.4rem;
+  background-color: #62a403;
+  color: white;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 0.8rem;
+}
+/*新增無銀行卡绑定*/
+.nobankcardinfo {
+  width: 12.8rem;
+  height: 4.6rem;
+  padding: 0.7rem 0.75rem 0.6rem 0.75rem;
+  background-color: inherit;
+  text-align: left;
+  border: 0.05rem solid #d2d2d2;
+  border-radius: 0.4rem;
+}
+.nobankcardinfo .banklogo {
+  width: 1.9rem;
+  height: 1.9rem;
+  float: left;
+  border-radius: 100%;
+  border: 0.05rem solid #d2d2d2;
+}
+.nobankcardinfo .closebutton {
+  width: 0.85rem;
+  height: 0.85rem;
+  float: right;
+}
+.nobankcardinfo .cardtext {
+  font-size: 0.7rem;
+  color: #73757b;
+  margin-top: 1.35rem;
+  margin-left: 3.2rem;
+}
+/*新增有銀行卡绑定*/
+.bankcardinfo {
+  position: relative;
+  width: 12.8rem;
+  height: 4.6rem;
+  padding: 0.7rem 0.75rem 0.6rem 0.75rem;
+  background-color: inherit;
+  text-align: left;
+  border: 0.05rem solid #2395c4;
+  border-radius: 0.4rem;
+  float: left;
+}
+.bankcardinfo .banklogo {
+  width: 1.9rem;
+  height: 1.9rem;
+  float: left;
+}
+.bankcardinfo .memberinfoarea {
+  position: relative;
+  margin-left: 2.9rem;
+  width: 8.75rem;
+  height: 3.75rem;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+.bankcardinfo .memberinfoarea .membername {
+  font-size: 0.8rem;
+  color: #73757b;
+  margin-bottom: 0.15rem;
+}
+.bankcardinfo .memberinfoarea .bankname {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #73757b;
+  margin-bottom: 0.1rem;
+}
+.bankcardinfo .memberinfoarea .addressinfo {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #73757b;
+}
+.bankcardinfo .memberinfoarea .cardnumber {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin-top: 0.3rem;
+  color: #73757b;
+}
+.bankcardinfo .correction {
+  width: 0.85rem;
+  float: right;
+}
+.bankcardinfo .locationinfo {
+  float: left;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  margin-bottom: -0.1rem;
+  color: #8c8c8c;
+}
+.bankcardinfo .tieddate {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #8c8c8c;
+  float: right;
+}
+/*success Box*/
+.suc-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  /*max-width: 80%;*/
+  padding: 0.75rem;
+  background-color: #111;
+  opacity: 0;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+/* 分頁導覽功能 */
+.pagination {
+  padding: 0 0.55rem;
+  font-size: 0.65rem;
+  color: #238eb5;
+  line-height: 1.4rem;
+}
+.pagination ul {
+  width: 10.5rem;
+  float: left;
+}
+.pagination ul li {
+  float: left;
+  padding-right: 0.45rem;
+}
+.pagination ul li a {
+  color: #238eb5;
+}
+.pagination ul li span.total-page {
+  color: #8c8c8c;
+}
+.pagination ul li:last-of-type {
+  padding-right: 0;
+}
+.pagination > div {
+  padding-left: 0.4rem;
+  float: left;
+  width: 3.95rem;
+}
+.pagination > div form input {
+  width: 1.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 0.15rem;
+  background-color: #e1e1e1;
+  color: #111;
+  text-align: center;
+  float: left;
+  margin-top: 0.3rem;
+  font-size: 0.65rem;
+}
+.pagination > div .go {
+  width: 1rem;
+  padding-left: 0.35rem;
+  float: right;
+}

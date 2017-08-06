@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>有绑定信用卡提款</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/member.css">	
+	<link rel="stylesheet" href="css/takemoneynocard.css">	
+</head>
+<body>
+	<header></header>
+	<div class="container model page-model">
+		<form id="takemoneyinfo">
+		<div class="title">
+			提款
+		</div>
+		<div class="content">
+			<div class="takemoneysub">
+				<p>钱包余额：</p>
+				<div class="remainmoney">1234567</div>
+			</div>
+			<div class="line"></div>
+			<div class="inputmoneyarea">
+					<p class="takemoneytip">输入提款金额</p>
+					<div class="infoinputbox">
+						<input id="inputmon" type="number" name="money" class="infoinput" placeholder="输入提款金额">
+					</div>
+			</div>
+			<div class="moneynotenough">金额不正确，请重新输入。</div>
+			<div class="line"></div>
+			<div class="subtitle">
+				选择收款方式
+			</div>
+			<div class="creditcardarea">
+				<div class="bankcardinfo card01">
+					<img src="imgs/logo/CardCcb_114x114@3x.png" class="banklogo">
+					<img src="imgs/icons/Circle_34x34@2x.png" class="correction">
+					<div class="memberinfoarea">
+						<p class="membername">张三</p>
+						<p class="bankname">中国建设银行</p>
+						<p class="addressinfo">九江分行九江县庐山西路256号</p>
+						<p class="cardnumber">0000 **** **** 0000</p>
+					</div>
+					<p class="locationinfo">江西，九江</p>
+					<p class="tieddate">绑定：2016-08-19 18:16</p>
+				</div>
+				<div class="bankcardinfo card02">
+					<img src="imgs/logo/CardCcb_114x114@3x.png" class="banklogo">
+					<img src="imgs/icons/Circle_34x34@2x.png" class="correction">
+					<div class="memberinfoarea">
+						<p class="membername">张三</p>
+						<p class="bankname">中国建设银行</p>
+						<p class="addressinfo">九江分行九江县庐山西路256号</p>
+						<p class="cardnumber">0000 **** **** 0000</p>
+					</div>
+					<p class="locationinfo">江西，九江</p>
+					<p class="tieddate">绑定：2016-08-19 18:16</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<input type="submit" name="submit" class="nextstep common-btn" value="下一步">
+		</div>
+		</form>
+	</div>
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+</body>
+<script src="js\jquery-2.1.1.min.js"></script>
+<script src="js\jquery.validate\jquery.validate.js"></script>
+<script src="js\jquery.validate\additional-methods_custom.js"></script>
+<script src="js\jquery.validate\messages_zh.js"></script>
+<script src="js\share.js"></script>
+<script type="text/javascript">
+
+$('.card01').on('click',function(){
+			$('.card01').css('background-color','#eeeeee');
+			$('.card02').css('background-color','');
+		});
+
+	$('.card02').on('click',function(){
+		$('.card02').css('background-color','#eeeeee');
+		$('.card01').css('background-color','');
+	});
+
+	$('.moneynotenough').hide();
+	$('.nextstep').on('click',function(){
+		var x =document.getElementsByClassName("remainmoney")[0].innerHTML;
+		var y =document.getElementById("inputmon").value;
+		if (Number(x)<Number(y)){
+			$('.moneynotenough').show();
+		}
+		else{
+			$('.moneynotenough').hide();
+		}
+	});
+	$(document).ready(function() {
+		 $("#takemoneyinfo").validate({
+		 	rules: {
+		 		money:{
+		 			required:true,
+		 			maxlength:10
+		 		}
+		 	},
+		    submitHandler: function(form) {			    	
+		    	$(this).submit();
+		    	//驗證無誤則導至成功頁面
+				location.href = "takemoneysuc.html";
+		    	console.log("提款成功.... ");
+		    }		    
+		});
+	});
+	
+</script>
+</html>

@@ -1,0 +1,677 @@
+@r:20rem;
+@color_238eb5: #238eb5;
+
+/*更改輸入框提示字的顏色*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #8c8c8c;
+}
+
+.model{
+	/* Title */
+    .title{
+        background-color: #f9f9f9;
+        height: 44/@r;
+        line-height: 44/@r;
+        padding-left: 16/@r;
+        border-bottom: 1px solid #d2d2d2;
+        color: #73757b;
+        font-size: 17/@r;
+        font-weight: bold;
+        position: relative;
+        span:nth-of-type(1){
+            font-size: 17/@r;
+            padding: 0 10/@r;
+        }
+        span:nth-of-type(2){
+            font-size: 12/@r;
+            font-weight: bold;
+            color: #73757b;
+        }        
+    }  
+    /* 關閉 & 欄位內容消除之ICON  */
+	.close{
+		width: 30/@r;
+        height: 30/@r;
+        line-height: 30/@r;
+        position: absolute;
+        top: 0/@r;
+        right: 0/@r;   
+        color: #73757b;
+        font-size: 17/@r;   
+        display: none;
+        background: url('../imgs/icons/Close_132x132@3x.png') no-repeat center;
+	    background-size: 40/@r 40/@r !important;
+	    z-index: 1;
+    }
+    /* 共用按鈕樣式 */
+    input.common-btn {
+        border-radius: 8/@r;
+        line-height: 36/@r;
+        width: 288/@r;
+        border: none;
+        background-color: @color_238eb5;           
+        padding: 0;
+        outline: none;
+        font-size: 16/@r;
+        color: #fff;
+    } 
+    input.common-btn.forget-btn {
+        background-color: #bcc1c3;  
+    } 
+    /*欄位之disabled*/
+    .disable{
+        opacity: 0.3;
+    }  
+    /*驗證碼*/
+	.valid-img{  
+		text-align: center;
+		margin-top: 12/@r;
+		img{      
+	        width: 200/@r;
+	        height: 50/@r;
+	    } 
+	}
+	/*欄位驗證之錯誤訊息*/
+	label.error{
+        color: #ff0000 !important;
+        display: block;
+        font-size: 12/@r;
+        padding-bottom: 12/@r;  
+        line-height: 13/@r;
+        margin-left: 8/@r;
+    }  
+    /*按鈕上方之錯誤訊息*/
+	.errMsg{
+        margin: 0;
+        color: #ff0000;
+        font-size: 12/@r;
+        line-height: 40/@r;
+        text-align: center;
+        display: none;
+    }  
+    /*新增select欄位*/
+    .infoselectbox{
+        width: 288/@r;
+        margin-bottom: 16/@r;
+        .infoselect{
+            width: 288/@r;
+            padding-left: 10/@r;
+            height: 30/@r;
+            background: url('../imgs/icons/Bank_DownArrow_90x90@3x.png') no-repeat #e1e1e1 256/@r;
+            background-size: 30/@r;
+            border-radius: 3/@r;
+            -webkit-appearance: none;
+            font-size: 13/@r;
+            color: #8c8c8c;
+        }
+    }
+    /*新增input欄位*/
+    .infoinputbox{
+        width: 288/@r;
+        margin-bottom: 16/@r;
+        .infoinput{
+            background-color:#e1e1e1;
+            border-radius: 3/@r;
+            height: 30/@r;
+            width: 278/@r; 
+            font-size: 13/@r;
+            color: #8c8c8c;
+            padding-left: 10/@r;
+            line-height: 30/@r;
+        }
+    }
+}
+/*For tabBar & login page*/
+.box-model {
+    border-top: 1px solid #ddd;
+    width: 100%;    
+    background-color: #fff; 
+    z-index: 2;  
+    position: absolute;
+    bottom: 50/@r;
+    display: none; 
+    
+    .title{
+		.close {
+		    width: 44/@r;
+		    height: 44/@r;
+		    font-size: 20/@r;
+		    text-align: center;		    
+		    display: block; 
+		}
+    }
+    
+    .content{
+	   	div{
+	        margin-left: 16/@r;
+	        position: relative;
+	    }	    
+	    .text-field{            
+	        border-bottom: 1px solid rgba(206,206,210,0.5);   
+	        input {
+	        	border-radius: 8/@r;
+		        line-height: 36/@r;
+		        width: 288/@r;
+		        border: none;	                
+		        padding: 0;
+		        outline: none;	        
+		        color: #fff;
+	            box-sizing: border-box;
+	            background-color: #fff;
+	            font-size: 13/@r;
+	            color: #73757b;
+	        }    
+	    }   
+	    .text-field::before{
+	        content: '';
+	        color: #ff7200;
+	        display: block;
+	        font-size: 13/@r;
+	        float: left;
+	        height: 36/@r;
+	        line-height: 36/@r;
+	        text-align: center;
+	        width: 8/@r;
+	    }
+	    /*必填欄位之星號*/
+	    .text-field.required::before{
+	        content: '*';
+	    } 	    
+    }
+   	
+
+}
+/*For normal page*/
+.page-model {
+    border-top: 1px solid #ddd;
+    width: 100%;    
+    background-color: #fff; 
+      
+    .content{
+    	padding: 16/@r 16/@r 0 16/@r;
+
+    	p.main-comment{
+            font-size: 12/@r;
+            color: #73757b;
+            padding-bottom: 16/@r;
+        }
+        p.comment{
+            font-size: 11/@r;
+            color: #111;
+            line-height: 15/@r;
+            padding-bottom: 16/@r; 
+        }
+        .text-field{   
+            position: relative;   
+            padding: 0 0 6/@r;        
+            input {
+                box-sizing: border-box;
+                border: none;   
+                border-radius: 3/@r; 
+                background-color: #e1e1e1;
+                color: #858585;
+                font-size: 13/@r;
+                height: 30/@r;
+                line-height: 30/@r;
+                outline: none;   
+                padding-top: 0;
+                padding-bottom: 0; 
+                padding-left: 10/@r;
+                width: 288/@r;    
+            } 
+        } 
+    }
+    label.error{
+        padding-top: 12/@r;         
+    }   
+}
+
+
+
+/* custom goTop button  */
+#goTop{
+	display: none;
+	width: 50/@r;
+	height: 50/@r;
+    position: fixed;
+	background: url('../imgs/icons/Top_enable_150x150@3x.png') no-repeat center;
+    background-size: 50/@r 50/@r !important;
+	border-radius: 50%;
+    opacity: .8;
+    bottom: 148/@r;
+    right: 8/@r;
+}
+/* End goTop button  */
+
+/* custom radio button  */
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: #000; 
+    cursor:pointer;
+
+    div{
+        position: relative;
+        float: left;
+        height: 18/@r;
+        line-height: 18/@r;
+        
+        span{
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        span.text{
+            margin-left: 13/@r;
+            font-size: 13/@r;
+        }
+        span.outter,span.inner {
+            -moz-border-radius: 50%;
+            border-radius: 50%;  
+        }
+        span.outter {
+             border: 1/@r solid @color_238eb5;
+             display: block;
+             width: 18/@r;
+             height: 18/@r;
+             position:relative;    
+             float: left;  
+        }
+        span.inner {
+            width: 18/@r;
+            height: 18/@r;
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            position:absolute; 
+            top: 0;
+            left: 0;
+        }
+    }
+}
+input[type="radio"]:checked + label span.inner{
+     background-color: @color_238eb5;     
+}
+/* End radio button  */
+
+/* popup */       
+.overlay{
+    display:none; 
+    position: fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    background-color: rgba(0,0,0,0.5);
+    z-index:99998;     
+
+    .layer-wrap{
+	    box-sizing: border-box; 
+	    width: 270/@r;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%; 
+	    margin-left: -135/@r; /*回推總寬一半*/
+	    border-radius: 12/@r; 
+	    background-color: #fff; 
+	    box-shadow: 1/@r 2/@r 4/@r 0 rgba(0,0,0,0.12); 
+	    text-align: center;
+	    font-size: 17/@r; 
+	    color: #111;
+	    overflow: hidden;
+	    z-index: 99999;    
+
+	    dl{
+		    width: 240/@r;
+		    margin: 0 auto;   
+		}
+
+		.title{
+			padding: 22/@r 0 7/@r;
+			font-weight: bold;
+			line-height: 17/@r;
+		}
+		.details{
+			padding: 2/@r 0 20/@r;
+			font-size: 13/@r;
+			line-height: 19/@r;
+		}
+        .timetext{
+            float: left;
+            margin-left: 60/@r;
+            font-size: 13/@r;
+            line-height: 21/@r;
+            padding-bottom: 15/@r;
+        }    
+        #timer{
+            font-size: 18/@r;
+            color: @color_238eb5;
+            float: left;
+            padding-bottom: 15/@r;
+        }
+        .roletext{
+            width: 240/@r;
+            font-size: 11/@r;
+            -webkit-transform:scale(0.83);
+            line-height: 16/@r;
+            color: #73757b;
+            margin-bottom: 20/@r;
+            text-align: left;           
+        }
+        .contactService{
+        	font-weight: bold;
+        	color: @color_238eb5;
+        	text-decoration: underline;
+        }
+		.layer-close {
+		    position:absolute; 
+		    right:12/@r; 
+		    top:12/@r; 
+		    width:20/@r; 
+		    height:20/@r; 
+		    cursor:pointer; 
+		    display: none;
+		} 
+		.layer-btn{
+			width: 100%;
+			height: 44/@r;
+			color: #238eb5;
+			border-top: 1/@r solid rgba(210, 210, 210,0.5);
+			line-height: 44/@r;
+			box-sizing: border-box;
+		}		
+		.layer-cancel{
+		    display: none;
+		    border-left: 1/@r solid rgba(210, 210, 210,0.5);
+		} 
+		.layer-2btn{
+			width: 50%;
+			float: left;
+		}
+
+	}        
+} 
+
+/*訊息中心popup*/
+.moverlay{
+    display:none; 
+    position: fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    background-color: rgba(0,0,0,0.5);
+    z-index:99998;     
+
+        .messagelayer-wrap{
+            box-sizing: border-box; 
+            width: 288/@r;
+            padding-bottom:30/@r;
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+            margin-left: -144/@r; /*回推總寬一半*/ 
+            background-color: #fff; 
+            box-shadow: 1/@r 2/@r 4/@r 0 rgba(0,0,0,0.12);  
+            overflow: hidden;
+            .mtitle{
+                line-height:44/@r;
+                height: 44/@r;
+                border-bottom: 1/@r solid #d2d2d2;
+                text-align: left;
+                font-size: 17/@r;
+                color: #73757b;
+                font-weight: bold;
+                padding-left: 10/@r;
+            }
+            .mcontentarea{
+                padding-left:10/@r;
+                padding-right: 10/@r;
+                .msubtitle{
+                    font-size: 14/@r;
+                    line-height: 14/@r;
+                    margin-top: 16/@r;
+                    color: #73757b;
+                }
+                .mtime{
+                    color: #8c8c8c;
+                    font-size: 12/@r;
+                    line-height: 12/@r;
+                    margin-top: 6/@r;
+                    margin-bottom: 10/@r;
+                }
+                .mcontent01{
+                    font-size: 12/@r;
+                    line-height: 17/@r;
+                    margin-bottom: 7/@r;
+                    color: #8c8c8c;
+                }
+                .mcontent02{
+                    font-size:12/@r;
+                    line-height: 17/@r;
+                    margin-bottom: 7/@r;
+                    color: #8c8c8c;
+                }
+                .mcontecttitle{
+                    font-size: 12/@r;
+                    font-weight: bold;
+                    line-height: 17/@r;
+                    margin-top:6/@r; 
+                    color: #73757b;
+                }
+                .mcontect01{
+                    font-size: 12/@r;
+                    line-height: 17/@r;
+                    color: #8c8c8c;
+                    line-height: 12/@r;
+                    margin-bottom: 2/@r;
+                }
+                .mcontect02{
+                    font-size: 12/@r;
+                    line-height: 17/@r;
+                    margin-bottom: 15/@r;
+                    color: #8c8c8c;
+                    line-height: 12/@r;
+                }
+                .mbutarea{
+                    width: 268/@r;
+                    height: 36/@r;
+                    .mmeslayer-btn{
+                        width: 125/@r;
+                        height: 36/@r;
+                        float: left;
+                        border-radius: 8/@r;
+                        background-color: #a42503;
+                        color: white;
+                        text-align: center;
+                        line-height: 36/@r;
+                        font-size:16/@r;
+                    }
+                    .mmeslayer-2btn{
+                        width: 125/@r;
+                        height: 36/@r;
+                        float: left;
+                        border-radius: 8/@r;
+                        background-color: #62a403;
+                        color: white;
+                        line-height: 36/@r;
+                        font-size: 16/@r;
+                        text-align: center;
+                        margin-left: 16/@r;
+                    }
+                }
+            }
+        }
+}
+
+/*新增無銀行卡绑定*/
+.nobankcardinfo{
+    width:256/@r;
+    height: 92/@r;
+    padding: 14/@r 15/@r 12/@r 15/@r; 
+    background-color: inherit;
+    text-align: left;
+    border:1/@r solid #d2d2d2;
+    border-radius: 8/@r;
+    .banklogo{
+        width: 38/@r;
+        height: 38/@r;
+        float: left;
+        border-radius: 100%;
+        border:1/@r solid #d2d2d2;
+    }
+    .closebutton{
+        width: 17/@r;
+        height: 17/@r;
+        float: right;
+    }
+    .cardtext{
+        font-size: 14/@r;
+        color: #73757b;
+        margin-top: 27/@r;
+        margin-left: 64/@r;
+    }
+}
+
+/*新增有銀行卡绑定*/
+
+.bankcardinfo{
+    position: relative;
+    width:256/@r;
+    height: 92/@r;
+    padding: 14/@r 15/@r 12/@r 15/@r; 
+    background-color: inherit;
+    text-align: left;
+    border:1/@r solid #2395c4;
+    border-radius: 8/@r;
+    float: left;
+    .banklogo{
+        width: 38/@r;
+        height: 38/@r;
+        float: left;
+    }
+    .memberinfoarea{
+        position: relative;
+        margin-left: 58/@r;
+        width: 175/@r;
+        height: 75/@r;
+        text-align: left;
+        margin-bottom: 5/@r;
+        .membername{
+            font-size: 16/@r;
+            color: #73757b;
+            margin-bottom: 3/@r;
+        }
+        .bankname{
+            font-size: 12/@r;
+            line-height: 12/@r;
+            color: #73757b;
+            margin-bottom: 2/@r;
+        }
+        .addressinfo{
+            font-size: 12/@r;
+            line-height: 12/@r;
+            color: #73757b;
+        }
+        .cardnumber{
+            font-size: 16/@r;
+            line-height: 16/@r;
+            margin-top: 6/@r;
+            color: #73757b;
+        }
+    }
+    
+    .correction{
+        width: 17/@r;
+        float: right;
+    }
+    .locationinfo{
+        float: left;
+        font-size: 12/@r;
+        line-height: 12/@r;
+        margin-bottom: -2/@r;
+        color: #8c8c8c;
+
+    }
+    .tieddate{
+        font-size: 12/@r;
+        line-height: 12/@r;
+        color: #8c8c8c;
+        float: right;
+    }
+}
+
+/*success Box*/
+.suc-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    /*max-width: 80%;*/
+    padding: 15/@r;
+    background-color: #111;
+    opacity: 0;
+    font-size: 14/@r; 
+    border-radius: 4/@r;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+/* 分頁導覽功能 */
+.pagination{	
+	padding: 0 11/@r;	
+	font-size: 13/@r;
+	color: @color_238eb5;
+	line-height: 28/@r;
+	ul{		
+		width: 210/@r;
+		float: left;
+		li{
+			float: left;
+			padding-right: 9/@r;
+			a{
+				color: @color_238eb5;
+			}
+
+			span.total-page{
+				color: #8c8c8c;
+			}
+		}
+		li:last-of-type{
+			padding-right: 0;
+		}
+	}
+	>div{
+		padding-left: 8/@r;
+		float: left;
+		width: 79/@r;
+		form{
+			input{
+				width: 35/@r;
+				height: 15/@r;
+				border: none;
+				border-radius: 3/@r;
+				background-color: #e1e1e1;
+				color: #111;	
+				text-align: center;	
+				float: left;	
+				margin-top: 6/@r;	
+				font-size: 13/@r;	
+			}
+		}
+		.go{
+			width: 20/@r;
+			padding-left: 7/@r;
+			float: right;
+		}
+	}
+}

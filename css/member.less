@@ -1,0 +1,120 @@
+@r:20rem;
+@border-d2d2d2: 1/@r solid #d2d2d2;
+@color-blue: #238eb5;
+
+#member{
+	background-color: #fafafa; 
+	font-size: 13/@r;
+	color: #8c8c8c;
+	.block{
+		margin-top: 16/@r;
+		border-top: @border-d2d2d2;
+		border-bottom: @border-d2d2d2;
+		background-color: #fff; 
+		.subject{
+	
+		}
+		.detail{
+			padding: 0 20/@r 0 10/@r;
+			font-size: 13/@r;
+			font-weight: bold;
+			color: #111;
+		}
+		.detail-m16{
+			padding: 0 0 0 16/@r;			
+		}
+		.unset{
+			padding-left: 16/@r;
+		}
+		a{		
+			display: block;	
+			color: #8c8c8c;
+		}
+	}
+	.block>div:not(.management){
+		margin-left: 16/@r;
+		/*padding-right: 16/@r;*/
+		height: 40/@r;
+		line-height: 40/@r;
+	}
+	.block > div + div{
+		border-top: @border-d2d2d2;
+	}
+	.management ul{
+		border: none;
+	}
+	div.btn{
+		float: right;
+		margin-right: 16/@r;	
+		.setting{
+			display: block;
+			min-width: 40/@r;
+			height: 40/@r;
+			color: @color-blue;
+			float: left;
+			text-align: right;
+
+		}
+		.right-arrow{
+			float: left;
+			width: 40/@r;
+			height: 40/@r;
+			background: url('../imgs/icons/List_arrow_120x120@3x.png') no-repeat center;
+			background-size: 40/@r 40/@r;
+		}
+		.setting + .right-arrow{
+			margin-right: -16/@r;
+		}
+	}
+	div.btn.arrow{
+		margin-right: 0;	
+	}
+	
+	.title{
+		width: 100%;
+		height: 110/@r;
+		background: url('../imgs/background/Password_bg_960x330@3x.jpg') no-repeat center;
+		background-size: 320/@r 110/@r;		
+		.icon{
+			float: left;
+			padding: 28/@r 12/@r 28/@r 30/@r;
+			width: 55/@r;
+			height: 55/@r;
+			background: url('../imgs/icons/RegisteredMember_220x220@3x.png') no-repeat center;
+			background-size: 55/@r 55/@r;			
+			background-origin: content-box;
+		}
+		.welecome{
+			float: left;
+			font-size: 18/@r;
+			color: #fff;
+			/*line-height: 110/@r;	*/
+			width: 223/@r;	
+			height: 110/@r;	
+			text-align: center;
+			display: inline-block;
+		}
+		.welecome p:first-child{
+			line-height: 20/@r;
+			height: 20/@r;
+			padding: 35/@r 0 3/@r;
+		}
+		.text-1{
+			font-size: 14/@r;
+			color: #fff;			
+		}
+	}
+	.logout{
+		.last-time{
+			font-size: 12/@r;
+			color: #73757b;
+			padding: 18/@r 0 16/@r;
+			text-align: center;
+		}
+		.logout-btn{
+			text-align: center;
+			margin-bottom: 16/@r;
+		}
+	}
+
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>会员中心</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">		
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/member.css">	
+</head>
+<body>
+	<header></header>
+
+	<div id="member">
+		<div class="title">
+			<div class="icon"></div>
+			<div class="welecome">
+				<p>晚上好，<span id="name">ZhanSan</span></p>				
+				<p class="text-1">喝杯茶吧，让精神抖擞起来</p>	
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="rank">
+				<span class="subject">当前等级</span>
+				<span class="detail">VIP 2</span>
+				<span class="subject">可用积分:</span>
+				<span>73729320</span>
+				<div class="btn"><a href="vipLevel.html">查看</a></div>
+			</div>
+			<div class="balance">
+				<span class="subject">资金余额</span>
+				<span class="detail">1979120.00</span>
+				<div class="btn"><a href="fundingDetails.html">资金明细</a></div>
+			</div>
+			<div class="management">
+				<ul class="operating-list clearfix">
+					<li>
+						<a href="savemoney.html">
+							<div class="deposit"></div>
+							<p>存款</p>
+						</a>
+					</li>					
+					<li>
+						<a href="transfermoney.html">
+							<div class="transfer"></div>
+							<p>转帐</p>
+						</a>
+					</li>
+					<li>
+						<a href="takemoney_havecreditcard.html">
+							<div class="withdraw"></div>
+							<p>提款</p>
+						</a>
+					</li>
+				</ul>								
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="message">
+				<a  href="messagecenter.html">
+				<span class="subject">消息中心</span>
+				<span class="unset">您有（ <span id="messages">161</span> ）条新的消息</span>
+				<div class="btn">查看</div></a>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="name">
+				<a  href="binding_personal.html">
+					<span class="subject">真实姓名</span>
+					<!-- 有设置的样式  
+					<span class="detail detail-m16">王**</span>
+					-->
+					<span class="unset">未设置</span>
+					<div class="btn">
+						<span class="setting">现在设置</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>
+			<div class="phone">
+				<a  href="binding_phone.html">
+					<span class="subject">手机号码</span>
+					<!-- 有设置的样式 
+					<span class="detail detail-m16">139****1234</span>
+					-->
+					<!-- 未设置的样式 -->
+					<span class="unset">未设置</span>
+					<div class="btn">
+						<span class="setting">现在设置</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>
+			<div class="email">
+				<a  href="binding_mail.html">
+					<span class="subject">注册邮箱</span>
+					<!-- 有设置的样式 
+					<span class="detail detail-m16">Z****@gmail.com</span>
+					-->
+					<!-- 未设置的样式 -->
+					<span class="unset">未设置</span>
+					<div class="btn">
+						<span class="setting">现在设置</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>
+			<div class="bank">
+				<a href="creditcardfinishtied.html">
+					<span class="subject">绑定银行卡</span>
+					<div class="btn arrow">				
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>
+			<div class="password">
+				<a href="change_pwd.html">
+					<span class="subject">修改密码</span>
+					<div class="btn arrow">					
+						<span class="right-arrow"></span>			
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="recomand">
+				<a href="recommandMember.html">
+					<span class="subject">推荐会员</span>
+					<div class="btn arrow">					
+						<span class="right-arrow"></span>			
+					</div>
+				</a>
+			</div>			
+		</div>
+
+		<div class="block">
+			<div class="money-report">
+				<a  href="financialStatement.html">
+					<span class="subject">资金报表</span>
+					<div class="btn">
+						<span class="setting">查看</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>
+			<div class="game-record">
+				<a  href="gameRecord.html">
+					<span class="subject">游戏纪录</span>
+					<div class="btn">
+						<span class="setting">查看</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>
+			<div class="transaction-report">
+				<a href="transactionRecord.html">
+					<span class="subject">交易纪录</span>
+					<div class="btn">
+						<span class="setting">查看</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>			
+		</div>
+
+		<div class="block">
+			<div class="rescue-money">
+				<a href="rescue.html">
+					<span class="subject">救援金</span>
+					<div class="btn">
+						<span class="setting">申请</span>
+						<span class="right-arrow"></span>					
+					</div>
+				</a>
+			</div>					
+		</div>
+		
+		<div class="logout">
+			<div class="last-time">
+				上次登录：<span class="time">2016-09-16 19:47:41</span>
+			</div>
+			<div class="logout-btn model">
+				<input class="common-btn" type="button" value="退出登录">
+			</div>
+		</div>
+	</div>
+	
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+
+		});
+	</script>
+</body>
+</html>
+
+
+
+

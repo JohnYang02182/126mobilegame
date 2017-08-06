@@ -1,0 +1,196 @@
+.hover01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(73, 70, 70, 0.9);
+}
+.hover01 .nexticon {
+  position: absolute;
+  top: 6rem;
+  right: 6.75rem;
+  height: 2.2rem;
+}
+.hover01 .guide01 {
+  width: 33%;
+  position: absolute;
+  left: 0;
+  color: white;
+  text-align: center;
+  top: 50%;
+}
+.hover01 .guide01 .gnumber {
+  font-size: 1.25rem;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-style: italic;
+}
+.hover01 .guide01 .gtitle {
+  font-size: 0.7rem;
+  font-family: Microsoft JhengHei;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.hover01 .guide01 .gcontent {
+  font-size: 0.6rem;
+  font-family: Microsoft JhengHei;
+  line-height: 0.75rem;
+  margin-bottom: 0.1rem;
+}
+.hover01 .guide01 .arrow01 {
+  width: 2rem;
+}
+.hover01 .guide02 {
+  width: 33%;
+  position: absolute;
+  left: 33%;
+  color: white;
+  text-align: center;
+  top: 55%;
+}
+.hover01 .guide02 .gnumber {
+  font-size: 1.25rem;
+  font-family: Microsoft JhengHei;
+  font-style: italic;
+  font-weight: bold;
+}
+.hover01 .guide02 .gtitle {
+  font-size: 0.7rem;
+  font-family: Microsoft JhengHei;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.hover01 .guide02 .gcontent {
+  font-size: 0.6rem;
+  font-family: Microsoft JhengHei;
+  line-height: 0.75rem;
+  margin-bottom: 0.1rem;
+}
+.hover01 .guide02 .arrow02 {
+  width: 2rem;
+}
+.hover01 .guide03 {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  color: white;
+  text-align: center;
+  top: 45%;
+}
+.hover01 .guide03 .gnumber {
+  font-size: 1.25rem;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-style: italic;
+}
+.hover01 .guide03 .gtitle {
+  font-size: 0.7rem;
+  font-family: Microsoft JhengHei;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.hover01 .guide03 .gcontent {
+  font-size: 0.6rem;
+  font-family: Microsoft JhengHei;
+  line-height: 0.75rem;
+  margin-bottom: 0.1rem;
+}
+.hover01 .guide03 .arrow03 {
+  width: 2rem;
+}
+.hover02 {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73, 70, 70, 0.9);
+  z-index: 9999999999;
+}
+.hover02 .closeicon {
+  position: absolute;
+  top: 18rem;
+  right: 6.75rem;
+  height: 2.2rem;
+}
+.hover02 .guide04 {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  color: white;
+  text-align: center;
+  top: 0;
+}
+.hover02 .guide04 .arrow04 {
+  width: 3.5rem;
+  position: absolute;
+  top: 0;
+  left: 0.75rem;
+}
+.hover02 .guide04 .situation04 {
+  display: inline-block;
+  position: absolute;
+  top: 5.5rem;
+  left: 1.5rem;
+}
+.hover02 .guide04 .situation04 .gnumber {
+  font-size: 1.25rem;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-style: italic;
+}
+.hover02 .guide04 .situation04 .gtitle {
+  font-size: 0.7rem;
+  font-family: Microsoft JhengHei;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.hover02 .guide04 .situation04 .gcontent {
+  font-size: 0.6rem;
+  font-family: Microsoft JhengHei;
+  line-height: 0.75rem;
+  margin-bottom: 0.1rem;
+}
+.hover02 .guide05 {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  color: white;
+  text-align: center;
+  top: 0;
+}
+.hover02 .guide05 .arrow05 {
+  width: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+}
+.hover02 .guide05 .situation05 {
+  position: absolute;
+  top: 6.5rem;
+  right: 1.25rem;
+}
+.hover02 .guide05 .situation05 .gnumber {
+  font-size: 1.25rem;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-style: italic;
+}
+.hover02 .guide05 .situation05 .gtitle {
+  font-size: 0.7rem;
+  font-family: Microsoft JhengHei;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.hover02 .guide05 .situation05 .gcontent {
+  font-size: 0.6rem;
+  font-family: Microsoft JhengHei;
+  line-height: 0.75rem;
+  margin-bottom: 0.1rem;
+}

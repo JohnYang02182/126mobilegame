@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>游戏客户端下载</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">	
+	<link rel="stylesheet" href="css/share.css">		
+	<link rel="stylesheet" href="css/download.css">	
+</head>
+<body>
+	<header></header>
+
+	<div class="model" id="download">
+		<div class="title">游戏客户端下载</div>
+		<div class="content no-borderTop clearfix">	
+			<div class="brand">
+				<img src="imgs/logo/Download_pt_480x140@3x.png" alt="playtech">
+			</div>
+			<dl>
+				<dt><img src="imgs/download/Download_pt_342x273_01@3x.jpg" alt=""></dt>
+				<dd>
+					<p class="name">电子老虎机</p>
+					<a href="javascript:;">
+						<div class="d-btn clearfix">
+							<div class="icon android"></div>
+							<p>下载</p>
+						</div>
+					</a>					
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="imgs/download/Download_pt_342x273_02@3x.jpg" alt=""></dt>
+				<dd>
+					<p class="name">真人娱乐</p>
+					<a href="javascript:;">
+						<div class="d-btn clearfix">
+							<div class="icon android"></div>
+							<p>下载</p>
+						</div>
+					</a>					
+				</dd>
+			</dl>
+		</div>	
+		<div class="content clearfix">	
+			<div class="brand">
+				<img src="imgs/logo/Download_mg_480x140@3x.jpg" alt="microgaming">
+			</div>
+			<dl>
+				<dt><img src="imgs/download/Download_mg_342x273_01@3x.jpg" alt=""></dt>
+				<dd>
+					<p class="name">电子老虎机</p>
+					<a href="javascript:;">
+						<div class="d-btn clearfix">
+							<div class="icon android"></div>
+							<p>下载</p>
+						</div>
+					</a>					
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="imgs/download/Download_mg_342x273_02@3x.jpg" alt=""></dt>
+				<dd>
+					<p class="name">真人娱乐</p>
+					<a href="javascript:;">
+						<div class="d-btn clearfix">
+							<div class="icon android"></div>
+							<p>下载</p>
+						</div>
+					</a>					
+				</dd>
+			</dl>
+		</div>	
+		<div class="content clearfix">	
+			<div class="brand">
+				<img src="imgs/logo/Download_ag_480x140@3x.jpg" alt="asiagaming">
+			</div>
+			<dl>
+				<dt><img src="imgs/download/Download_ag_342x273_01@3x.jpg" alt=""></dt>
+				<dd>
+					<p class="name">客户端</p>
+					<a href="javascript:;">
+						<div class="d-btn clearfix">
+							<div class="icon android"></div>
+							<p>下载</p>
+						</div>
+					</a>					
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="imgs/download/Download_ag_342x273_02@3x.jpg" alt=""></dt>
+				<dd>
+					<p class="name">客户端</p>
+					<a href="javascript:;">
+						<div class="d-btn clearfix">
+							<div class="icon apple"></div>
+							<p>下载</p>
+						</div>
+					</a>					
+				</dd>
+			</dl>
+		</div>
+	</div>
+	
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			var uA = navigator.userAgent;
+			if ((/Android/gi).test(uA)){
+				$('.icon.apple').parent().addClass("disabled");
+				$('.icon.apple').addClass("disabled");
+			    console.log("Android");
+			}else if((/\(i[^;]+;( U;)? CPU.+Mac OS X/).test(uA)){
+				$('.icon.android').parent().addClass("disabled");
+				$('.icon.android').addClass("disabled");
+				console.log("Apple");
+			}
+
+			
+		});
+	</script>
+</body>
+</html>
+
+
+
+

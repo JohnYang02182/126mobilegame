@@ -1,0 +1,194 @@
+button {
+  padding: 0;
+  border: 0;
+}
+table,
+th,
+td {
+  border: 1px solid #d2d2d2;
+  border-collapse: collapse;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+}
+.container .transmonsucarea {
+  width: 14.4rem;
+  padding: 0 0.8rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+.container .transmonsucarea .transmonsucimg {
+  width: 3.8rem;
+  height: 3.8rem;
+  margin-top: 0.8rem;
+}
+.container .transmonsucarea .transmonsucw {
+  font-size: 0.8rem;
+  color: #73757b;
+  line-height: 2rem;
+  padding-bottom: 0.2rem;
+}
+.container .nowplaytitle {
+  width: 14.4rem;
+  padding: 0 0.8rem;
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .nowplaytitle .nowplayw {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  line-height: 2.1rem;
+}
+.container .nowplayarea {
+  width: 13.2rem;
+  padding: 0.5rem 1.4rem;
+  background-color: #f9f9f9;
+}
+.container .nowplayarea .tiger {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.15rem;
+  background-image: url("../imgs/tabBar/ToolsBar_slot_240x240@3x.jpg");
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+}
+.container .nowplayarea .tiger .tigerb {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.15rem;
+}
+.container .nowplayarea .tiger .tigerb p {
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 2.7rem;
+}
+.container .nowplayarea .realman {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.15rem;
+  background-image: url("../imgs/tabBar/ToolsBar_live_240x240@3x.jpg");
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+  margin-left: 0.6rem;
+}
+.container .nowplayarea .realman .realmanb {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.15rem;
+}
+.container .nowplayarea .realman .realmanb p {
+  color: white;
+  padding-top: 2.7rem;
+  font-size: 0.8rem;
+}
+.container .nowplayarea .fishking {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.15rem;
+  background-image: url("../imgs/tabBar/ToolsBar_fish_240x240@3x.jpg");
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+  margin-left: 0.6rem;
+}
+.container .nowplayarea .fishking .fishkingb {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.15rem;
+}
+.container .nowplayarea .fishking .fishkingb p {
+  color: white;
+  padding-top: 2.7rem;
+  font-size: 0.8rem;
+}
+.container .continue {
+  width: 16rem;
+  height: 2.1rem;
+  background-color: white;
+  border-top: 0.05rem solid #d2d2d2;
+}
+.container .continue .continuetext {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  line-height: 2.1rem;
+  margin-left: 0.8rem;
+}
+.container .chooseitem {
+  width: 16rem;
+  height: 4.8rem;
+  border-top: 0.05rem solid #d2d2d2;
+  border-bottom: 0.05rem solid #d2d2d2;
+}
+.container .chooseitem .item01 {
+  height: 4.8rem;
+  width: 5.35rem;
+  text-align: center;
+  border-right: 0.05rem solid #d2d2d2;
+  float: left;
+  background-color: #fafafa;
+}
+.container .chooseitem .item01 .savemoney {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.3rem;
+}
+.container .chooseitem .item01 .item01w {
+  font-size: 0.6rem;
+  color: #73757b;
+  line-height: 1.1rem;
+}
+.container .chooseitem .item02 {
+  height: 4.8rem;
+  width: 5.3rem;
+  text-align: center;
+  border-right: 0.05rem solid #d2d2d2;
+  float: left;
+  background-color: #fafafa;
+}
+.container .chooseitem .item02 .takemoney {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.3rem;
+}
+.container .chooseitem .item02 .item02w {
+  font-size: 0.6rem;
+  color: #73757b;
+  line-height: 1.1rem;
+}
+.container .chooseitem .item03 {
+  height: 4.8rem;
+  width: 5.35rem;
+  text-align: center;
+  float: left;
+  background-color: #fafafa;
+}
+.container .chooseitem .item03 .transmoney {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin-top: 0.3rem;
+}
+.container .chooseitem .item03 .item03w {
+  font-size: 0.6rem;
+  color: #73757b;
+  line-height: 1.1rem;
+}

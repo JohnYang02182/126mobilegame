@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>游戏纪录</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/gameRecord.css">
+</head>
+<body>
+	<header></header>
+	
+	<div class="model page-model" id="gameRecord">
+		<div class="title">游戏纪录</div>	
+		<ul class="filter clearfix">
+			<li class="active">今天</li>
+			<li>昨天</li>
+			<li>一周内</li>
+			<li>二周内</li>
+			<li>一月内</li>
+		</ul>	
+		<div class="content">			
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">19</span>日</span>
+					<span class="clock"></span>
+					<span class="time">12:58:02</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>208.00</td>
+						<td class="negative">-6.7</td>						
+					</tr>					
+				</table>
+			</div>	
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">18</span>日</span>
+					<span class="clock"></span>
+					<span class="time">8:08:52</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>396.00</td>
+						<td class="postive">+18.7</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">17</span>日</span>
+					<span class="clock"></span>
+					<span class="time">6:48:22</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>55.00</td>
+						<td class="negative">-36.7</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">16</span>日</span>
+					<span class="clock"></span>
+					<span class="time">18:01:02</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>15.00</td>
+						<td class="negative">-44.7</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">15</span>日</span>
+					<span class="clock"></span>
+					<span class="time">13:22:02</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>2789.00</td>
+						<td class="postive">+6.7</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">19</span>日</span>
+					<span class="clock"></span>
+					<span class="time">12:58:02</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>27800009.00</td>
+						<td class="negative">-6.7</td>						
+					</tr>					
+				</table>
+			</div>
+			<div class="blocks">
+				<p class="date">
+					<span><span class="bg">12</span>月<span class="bg">19</span>日</span>
+					<span class="clock"></span>
+					<span class="time">12:58:02</span>
+				</p>
+				<table>
+					<tr>
+						<th>类型</th>
+						<th>投注额</th>
+						<th>输赢</th>
+					</tr>
+					<tr>
+						<td>???</td>
+						<td>2789.00</td>
+						<td class="negative">-6.7</td>						
+					</tr>					
+				</table>
+			</div>		
+			<div class="pagination clearfix">
+				<ul>
+					<li><a href="javascript:void(0);">首页</a></li>
+					<li><a href="javascript:void(0);">上一页</a></li>
+					<li><a href="javascript:void(0);">下一页</a></li>
+					<li><a href="javascript:void(0);">末页</a></li>
+					<li><span class="total-page">共<span>26</span>页</span></li>
+				</ul>
+				<div>					
+					<form id="paginationForm">
+						<input class="num" type="number" name="page" value="5" max="99">
+						<div class="go">GO</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+		<div class="no-data">
+			<img src="imgs/icons/Exclamation_228x228@3x.png" alt="无游戏纪录">
+			<p>您此时间段内，无任何游戏纪录</p>
+		</div>	
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			$(".filter li").on("click" , function(){
+				$(".filter li").removeClass("active");
+				$(this).addClass("active");
+			})
+
+
+			// for test
+			var onOff = false;
+			$('#gameRecord .title').on("click" , function(){
+				if(onOff){				
+					$("#gameRecord .content").show();
+					$("#gameRecord .no-data").hide();
+				}else{				
+					$("#gameRecord .content").hide();
+					$("#gameRecord .no-data").show();
+				}
+				onOff = !onOff;
+			})
+		});
+	</script>
+</body>
+
+</html>
+
+
+
+

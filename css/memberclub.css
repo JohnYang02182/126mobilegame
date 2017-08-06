@@ -1,0 +1,477 @@
+button {
+  padding: 0;
+}
+table,
+th,
+td {
+  border: 1px solid #d2d2d2;
+  border-collapse: collapse;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  background-color: #fafafa;
+}
+.container .titlearea {
+  height: 2.2rem;
+  width: 100%;
+}
+.container .titlearea .title {
+  line-height: 2.2rem;
+  float: left;
+  position: relative;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #73757b;
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+}
+.container .titlearea .line {
+  margin: 0 0.5rem;
+  margin-top: 0.675rem;
+  float: left;
+  position: relative;
+  height: 0.85rem;
+  width: 0.05rem;
+  background-color: #73757b;
+}
+.container .titlearea .subtitle {
+  position: relative;
+  float: left;
+  margin-top: 0.8rem;
+  font-size: 0.6rem;
+  color: #73757b;
+  font-weight: bold;
+}
+.container .driverline {
+  width: 100%;
+  height: 1px;
+  background-color: #c9c9c9;
+}
+.container .vipcontent {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14.4rem;
+}
+.container .vipcontent .viplogo {
+  height: 5.45rem;
+  width: 100%;
+}
+.container .vipcontent .viplogo .viplogoimg {
+  width: 4.1rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.8rem;
+  margin-bottom: 0.55rem;
+}
+.container .scrollcontent {
+  width: 100%;
+  background-color: #fafafa;
+  height: 13.15rem;
+  -webkit-overflow-scrolling: touch;
+}
+.container .scrollcontent .givescrolltop {
+  position: absolute;
+  top: 32.7rem;
+}
+.container .scrollcontent .howjointitle {
+  width: 14.4rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .scrollcontent .howjointitle .dot {
+  margin: 0.275rem 0.25rem 0.475rem 0.1rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: #73757b;
+  float: left;
+}
+.container .scrollcontent .howjointitle .howjoin {
+  float: left;
+  font-size: 0.75rem;
+  color: #73757b;
+}
+.container .scrollcontent .howjointitle .howjoindetail {
+  float: left;
+  font-size: 0.6rem;
+  color: #8c8c8c;
+  line-height: 0.85rem;
+  margin-bottom: 0.525rem;
+}
+.container .scrollcontent .scrolltable {
+  width: 15.2rem;
+  padding-left: 0.8rem;
+  overflow: scroll;
+  padding-bottom: 0.8rem;
+  -webkit-overflow-scrolling: touch;
+}
+.container .scrollcontent .scrolltable .memberrank {
+  width: 24.15rem;
+  height: 10.85rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframet .ranktitle {
+  height: 1.55rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: #238eb5;
+  color: white;
+  text-align: center;
+  line-height: 1.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframet .ranktitle1 {
+  height: 1.55rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: #238eb5;
+  color: white;
+  text-align: center;
+  line-height: 1.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframet .ranktitle2 {
+  height: 1.55rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: #238eb5;
+  color: white;
+  text-align: center;
+  line-height: 1.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframet .ranktitle3 {
+  height: 1.55rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: #238eb5;
+  color: white;
+  text-align: center;
+  line-height: 1.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframet .ranktitle4 {
+  height: 1.55rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: #238eb5;
+  color: white;
+  text-align: center;
+  line-height: 1.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframet .ranktitleb {
+  height: 1.55rem;
+  width: 5.65rem;
+  font-size: 0.7rem;
+  background-color: #238eb5;
+  color: white;
+  text-align: center;
+  line-height: 1.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe {
+  overflow-x: scroll;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox {
+  height: 1.75rem;
+  width: 3.7rem;
+  text-align: center;
+  background-color: white;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .stargray {
+  background-image: url("../imgs/icons/StarGray_44x44@3x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.55rem;
+  width: 100%;
+  height: 0.55rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .starlight {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.55rem;
+  width: 100%;
+  height: 0.55rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .star2 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 1.1rem;
+  height: 0.55rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .star3 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 1.65rem;
+  height: 0.55rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .star4 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 2.2rem;
+  height: 0.55rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .star5 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 2.75rem;
+  height: 0.55rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox .rank {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox1 {
+  height: 1.75rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #8c8c8c;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox2 {
+  height: 1.75rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #8c8c8c;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox3 {
+  height: 1.75rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #8c8c8c;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox4 {
+  height: 1.75rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #8c8c8c;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankbox5 {
+  height: 1.75rem;
+  width: 3.7rem;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #8c8c8c;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.container .scrollcontent .scrolltable .memberrank .rankboxframe .rankboxb {
+  height: 1.75rem;
+  width: 5.65rem;
+  font-size: 0.7rem;
+  background-color: white;
+  color: #8c8c8c;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.container .scrollcontent .specialcontent {
+  width: 100%;
+}
+.container .scrollcontent .specialcontent .specialarea {
+  margin-bottom: 0.5rem;
+}
+.container .scrollcontent .specialcontent .specialarea .notive {
+  margin: 0.05rem 0.25rem auto 0.8rem;
+  height: 0.7rem;
+  float: left;
+}
+.container .scrollcontent .specialcontent .specialarea .specialtitle {
+  position: relative;
+  font-size: 0.7rem;
+  color: #73757b;
+  float: left;
+}
+.container .scrollcontent .specialcontent .specialtext {
+  padding-left: 0.8rem;
+  font-size: 0.6rem;
+  color: #8c8c8c;
+  line-height: 0.85rem;
+  text-align: justify;
+}
+.container .scrollcontent .specialcontent .specialtext .incontent {
+  margin-left: 0.65rem;
+  margin-right: 0.8rem;
+}
+.container .scrollcontent .specialcontent .line {
+  width: 15.2rem;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+  margin: 0.5rem 0;
+  float: right;
+}
+.container .scrollcontent .specialcontent .linefall {
+  width: 100%;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+  margin: 0.8rem 0;
+}
+.container .scrollcontent .specialcontent .viparea {
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.container .scrollcontent .specialcontent .viparea .dot {
+  margin: 0.275rem 0.25rem 0.475rem 0.1rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: #73757b;
+  float: left;
+}
+.container .scrollcontent .specialcontent .viparea .viptitle {
+  float: left;
+  font-size: 0.75rem;
+  color: #73757b;
+}
+.container .scrollcontent .specialcontent .specialtable {
+  width: 14.4rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank2 {
+  background-color: #238eb5;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank2 .memberrankt {
+  font-size: 0.7rem;
+  color: white;
+  height: 1.6rem;
+  width: 3.7rem;
+  font-weight: normal;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank2 .tigert {
+  font-size: 0.7rem;
+  color: white;
+  height: 1.6rem;
+  width: 10.55rem;
+  font-weight: normal;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent {
+  background-color: white;
+  height: 1.75rem;
+  width: 3.7rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .starshead {
+  height: 0.55rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .stargray {
+  background-image: url("../imgs/icons/StarGray_44x44@3x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.55rem;
+  width: 100%;
+  height: 0.55rem;
+  margin-bottom: 0.1rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .starlight {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.55rem;
+  width: 100%;
+  height: 0.55rem;
+  margin-bottom: 0.1rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .star2 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 1.1rem;
+  height: 0.55rem;
+  margin-bottom: 0.1rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .star3 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 1.65rem;
+  height: 0.55rem;
+  margin-bottom: 0.1rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .star4 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 2.2rem;
+  height: 0.55rem;
+  margin-bottom: 0.1rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .star5 {
+  background-image: url("../imgs/icons/StarYellow_44x44@3x.jpg");
+  background-repeat: repeat-x;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 0.55rem;
+  width: 2.75rem;
+  height: 0.55rem;
+  margin-bottom: 0.1rem;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .rankcontent .rank {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+}
+.container .scrollcontent .specialcontent .specialtable .memberrank .tigerrate {
+  font-size: 0.7rem;
+  color: #8c8c8c;
+  height: 1.75rem;
+  width: 10.55rem;
+}
+.container .scrollcontent .line2 {
+  width: 100%;
+  height: 0.05rem;
+  background-color: #d2d2d2;
+}

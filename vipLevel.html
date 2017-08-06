@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>会员等级</title>
+	<script src="js/common.js"></script>	
+	<link rel="stylesheet" href="css/reset-m.css">	
+	<link rel="stylesheet" href="css/common.css">		
+	<link rel="stylesheet" href="css/share.css">	
+	<link rel="stylesheet" href="css/vipLevel.css">
+</head>
+<body>
+	<header></header>
+	
+	<div class="model box-model" id="vipLevel">
+		<div class="title">会员等级</div>		
+		<div class="content">
+			<div>
+				<p>当前等级</p>
+				<span>VIP 0</span>
+			</div>	
+			<div>
+				<p>可用积分</p>
+				<span class="red">0</span>
+			</div>	
+			<div>
+				<p>已使用积分</p>
+				<span class="red">0</span>
+			</div>		
+		</div>
+
+		<div class="levelbox levelup">
+			<p class="box-title">等级升级</p>
+			<div class="progress">
+			    <div class="progress-bar" style="width: 90%"></div>
+			</div>
+			<div class="box-content clearfix">
+				<div class="left">
+					<p>积分流水 >= 500</p>
+					<p>积分倍数：1.0</p>
+				</div>
+				<div class="right">
+					<p>等级升级需积分：300</p>
+					<p>等级可升级天数：30</p>
+				</div>
+			</div>			
+		</div>
+
+		<div class="levelbox levelkeep">
+			<p class="box-title">等级维持</p>
+			<div class="progress">
+			    <div class="progress-bar" style="width: 90%"></div>
+			</div>
+			<div class="box-content clearfix">
+				<div class="left">
+					<p>积分流水 >= 500</p>
+					<p>积分倍数：1.0</p>
+				</div>
+				<div class="right">
+					<p>等级维持需积分：300</p>
+					<p>等级可维持天数：30</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<nav class="tab-bar"></nav>
+	<footer></footer>	
+
+	<script src="js\jquery-2.1.1.min.js"></script>
+	<script src="js\jquery.validate\jquery.validate.js"></script>
+	<script src="js\jquery.validate\additional-methods_custom.js"></script>
+	<script src="js\jquery.validate\messages_zh.js"></script>
+	<script src="js\header.js"></script>
+	<script src="js\tabBar.js"></script>
+	<script src="js\share.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			$('.levelup .progress-bar').css("width","70%");
+			$('.levelkeep .progress-bar').css("width","50%");
+		});
+	</script>
+</body>
+</html>
+
+
+
+
